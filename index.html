@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Art</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nothing+You+Could+Do&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!--BARRA DE MENU-->
+        <div class="menu">
+            <div class="container">
+                <div class="logo">
+                    <h1>Colorful Art</h1>
+                    <img src="img/brush.png" alt="">
+                </div>
+                <nav class="links navegacao">
+                    <ul>
+                        <li>
+                            <a href="#inicio">Início</a>
+                        </li>
+                        <li>
+                            <a href="#obras">Obras</a>
+                        </li>
+                        <li>
+                            <a href="#artistas">Artistas</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav class="links autenticacao">
+                    <li>
+                        <a class="botao" id="login_acesso">Login</a>
+                    </li>
+                    <li>
+                        <a class="botao destaque" id="cadastrar_acesso">Cadastre-se</a>
+                    </li>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!--BANNER PRINCIPAL SLIDESHOW-->
+        <div class="galeria">
+            <div class="imagens">
+                <img src="img/paintings/gogh-amendoeira-em-flor.jpg" alt="Amendoeira em Flor">
+                <img src="img/paintings/botticelli-nascimento-venus.jpg" alt="O nascimento de Vênus">
+                <img src="img/paintings/vinci-monalisa_corte.jpg" alt="Monalisa">
+                <img src="img/paintings/magritte-les-amants.jpg" alt="Os Amantes">
+            </div>
+        </div>
+
+        <!--FRASE-->
+        <div class="frase">
+            <div class="container">
+                <q>A Arte diz o indizível, exprime o inexprimível, traduz o intraduzível.</q>
+                <span>Leonardo Da Vinci</span>
+            </div>
+        </div>
+
+        <!--OBRAS-->
+        <section class="maiores_obras">
+            <div class="container">
+                <h2>Obras mais procuradas</h2>
+                <hr>
+                <div class="conjunto">
+                    <ul class="flex">
+                        <button class="botao-art flex">
+                            <img src="img/before.png" alt="Anterior">
+                        </button>
+                        <li class="art">
+                            <div class="art-card">
+                                <div class="art-foto">
+                                    <img src="img/paintings/gogh-starry-night.jpg" alt="A Noite Estrelada">
+                                    <div class="art-nome">
+                                        <h3>A Noite Estrelada</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="art">
+                            <div class="art-card">
+                                <div class="art-foto">
+                                    <img src="img/paintings/vinci-monalisa.jpg" alt="Monalisa">
+                                    <div class="art-nome">
+                                        <h3>Monalisa</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="art">
+                            <div class="art-card">
+                                <div class="art-foto">
+                                    <img src="img/paintings/munch-the-scream.jpg" alt="O Grito">
+                                    <div class="art-nome">
+                                        <h3>O Grito</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="art">
+                            <div class="art-card">
+                                <div class="art-foto">
+                                    <img src="img/paintings/michelangelo-criacao-adao.jpg" alt="A Criação de Adão">
+                                    <div class="art-nome">
+                                        <h3>A Criação de Adão</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <button class="botao-art flex">
+                            <img src="img/after.png" alt="Próximo">
+                        </button>
+                    </ul>
+                </div>
+                <h3 class="link-obra">
+                    <a href="">Ver mais obras</a>
+                </h3>
+            </div>
+        </section>
+
+        <!--ARTISTAS-->
+        <section class="maiores_artistas">
+            <div class="container">
+                <h2>Artistas mais procurados</h2>
+                <hr>
+                <div class="conjunto">
+                    <ul class="flex">
+                        <button class="botao-art flex botao-color">
+                            <img src="img/before.png" alt="Anterior">
+                        </button>
+                        <li class="art">
+                            <div class="art-card">
+                                <div class="art-foto">
+                                    <img src="img/paintings/gogh-auto-retrato.jpg" alt="Van Gogh">
+                                    <div class="art-nome">
+                                        <h3>Van Gogh</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="art">
+                            <div class="art-card">
+                                <div class="art-foto">
+                                    <img src="img/paintings/Edvard_Munch.jpg" alt="Munch">
+                                    <div class="art-nome">
+                                        <h3>Edvard Munch</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="art">
+                            <div class="art-card">
+                                <div class="art-foto">
+                                    <img src="img/paintings/Sandro_Botticelli.jpg" alt="Botticelli">
+                                    <div class="art-nome">
+                                        <h3>Sandro Boticelli</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="art">
+                            <div class="art-card">
+                                <div class="art-foto">
+                                    <img src="img/paintings/Leonardo-da-Vinci.jpg" alt="Da vinci">
+                                    <div class="art-nome">
+                                        <h3>Leonardo da Vinci</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <button class="botao-art flex botao-color">
+                            <img src="img/after.png" alt="Próximo">
+                        </button>
+                    </ul>
+                </div>
+                <h3 class="link-artista">
+                    <a href="">Ver mais artistas</a>
+                </h3>
+            </div>
+        </section>
+    </main>
+
+    <!--RODAPÉ-->
+    <footer>
+        <div class="rodape">
+            <div class="container">
+                <div class="conteudo-footer flex">
+                    <div class="coluna">
+                        <h4>Obras</h4>
+                        <ul>
+                            <li>
+                                <a href="">Clássica</a>
+                            </li>
+                            <li>
+                                <a href="">Medieval</a>
+                            </li>
+                            <li>
+                                <a href="">Moderna</a>
+                            </li>
+                            <li>
+                                <a href="">Contemporânea</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="coluna">
+                        <h4>Artistas</h4>
+                        <ul>
+                            <li>
+                                <a href="">Top Artistas</a>
+                            </li>
+                            <li>
+                                <a href="">Artistas Revelação</a>
+                            </li>
+                            <li>
+                                <a href="">Artistas Nacionais</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="coluna">
+                        <h4>Autenticação</h4>
+                        <ul>
+                            <li>
+                                <a id="login_rodape">Fazer Login</a>
+                            </li>
+                            <li>
+                                <a id="cadastro_rodape">Criar uma conta</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="contato flex">
+                    <div class="redes_sociais">
+                        <h4>Siga a Colerful Art nas redes sociais</h4>
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/giwkiss/" target="_blank">
+                                    <img src="img/facebook.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/nuvemexotica/?hl=pt-br" target="_blank">
+                                    <img src="img/instagram.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/NuvemExotica" target="_blank">
+                                    <img src="img/twitter.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCc0SGr_WWw9t4iKfi2NP6KQ?view_as=subscriber"
+                                    target="_blank">
+                                    <img src="img/youtube.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="email">
+                        <h4>Contate-nos</h4>
+                        <a href="mailto:gisele.flor@bandtec.com.br">
+                            <img src="img/email.png" alt="">
+                            <span>gisele.flor@bandtec.com.br</span>
+                        </a>
+                    </div>
+                </div>
+                <hr>
+                <div class="finalizacao">
+                    <q>Os espelhos são usados para ver o rosto; a arte para ver a alma.</q> (George Bernard Shaw) <br>
+                    <span>Feito com &#128155; em São Paulo, &copy; 2020 Colorful Art</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL LOGIN-->
+    <div id="modal-login" class="modal-container flex">
+        <div class="modal">
+            <button class="fechar">X</button>
+            <h3>Login</h3>
+            <img src="img/palette.png" alt="tela">
+            <form>
+                <input type="text" class="input" placeholder="E-mail">
+                <div class="border-input"></div>
+                <input type="password" class="input" placeholder="Senha">
+                <div class="border-input"></div>
+                <input type="checkbox"><span>Lembrar identificação do usuário</span>
+                <button class="enter">ENTRAR</button>
+                <button class="enter face">ENTRAR COM O FACEBOOK</button>
+            </form>
+        </div>
+    </div>
+
+    <!--MODAL CADASTRO-->
+    <div id="modal-cadastro" class="modal-container flex">
+        <div class="modal register">
+            <button class="fechar">X</button>
+            <h3>Faça parte da comunidade Colorful Art</h3>
+            <img src="img/paint.png" alt="paleta">
+            <form>
+                <input type="text" class="input" placeholder="Seu nome">
+                <div class="border-input"></div>
+                <input type="text" class="input" placeholder="Seu e-mail">
+                <div class="border-input"></div>
+                <input type="text" class="input" placeholder="Crie uma senha">
+                <div class="border-input"></div>
+                <input type="text" class="input" placeholder="Confirmar senha">
+                <div class="border-input"></div>
+                <button class="enter">CADASTRAR-ME</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+
+    // MODAL 
+    function iniciaModal (modalID) { //função que chama o modal com parametro do id do modal
+        const modal = document.getElementById (modalID); // pegue o elemento modalID
+        modal.classList.add('mostrar');
+        modal.addEventListener('click', (event) => {
+            if(event.target.id == modalID || event.target.className == 'fechar'){
+                modal.classList.remove ('mostrar');
+            }
+        })
+    }
+
+    // login
+    const logar_menu = document.getElementById ('login_acesso'); 
+    const logar_rodape = document.getElementById ('login_rodape');
+    logar_menu.addEventListener('click', function() {
+        iniciaModal ('modal-login') 
+    })
+    logar_rodape.addEventListener('click', function() {
+        iniciaModal ('modal-login')
+    })
+    
+    // cadastro
+    const cadastrar_menu = document.getElementById ('cadastrar_acesso');
+    const cadastrar_rodape = document.getElementById ('cadastro_rodape');
+    cadastrar_menu.addEventListener ('click', function() {
+        iniciaModal ('modal-cadastro')
+    })
+    cadastrar_rodape.addEventListener ('click', function() {
+        iniciaModal ('modal-cadastro')
+    })
+
+
+</script>
