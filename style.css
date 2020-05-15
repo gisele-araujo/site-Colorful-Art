@@ -60,11 +60,7 @@ header {
     padding: 30px;
 }
 
-.navegacao ul {
-    display: inline-block;
-}
-
-.navegacao li, .autenticacao li{
+.navegacao ul, .navegacao li, .autenticacao li{
     display: inline-block;
 }
 

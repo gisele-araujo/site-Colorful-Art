@@ -1,6 +1,6 @@
 // MODAL 
-function iniciaModal (modalID) { //função que chama o modal com parametro do id do modal
-    const modal = document.getElementById (modalID); // pegue o elemento modalID
+function iniciaModal (modalID) { 
+    const modal = document.getElementById (modalID); 
     modal.classList.add('mostrar');
     modal.addEventListener('click', (event) => {
         if(event.target.id == modalID || event.target.className == 'fechar'){
