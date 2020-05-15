@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colorful Art</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/inicio.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nothing+You+Could+Do&display=swap"
         rel="stylesheet">
 </head>
@@ -13,34 +14,36 @@
 <body>
     <header>
         <!--BARRA DE MENU-->
-        <div class="menu">
-            <div class="container">
-                <div class="logo">
-                    <h1>Colorful Art</h1>
-                    <img src="img/brush.png" alt="">
-                </div>
-                <nav class="links navegacao">
-                    <ul>
-                        <li>
-                            <a href="#inicio">Início</a>
-                        </li>
-                        <li>
-                            <a href="#obras">Obras</a>
-                        </li>
-                        <li>
-                            <a href="#artistas">Artistas</a>
-                        </li>
-                    </ul>
-                </nav>
+        <div class="cabecalho">
+            <div class="menu">
+                <div class="container">
+                    <div class="logo">
+                        <h1>Colorful Art</h1>
+                        <img src="img/brush.png" alt="">
+                    </div>
+                    <nav class="links navegacao">
+                        <ul>
+                            <li>
+                                <a href="index.html">Início</a>
+                            </li>
+                            <li>
+                                <a href="html/obras.html">Obras</a>
+                            </li>
+                            <li>
+                                <a href="html/artistas.html">Artistas</a>
+                            </li>
+                        </ul>
+                    </nav>
 
-                <nav class="links autenticacao">
-                    <li>
-                        <a class="botao" id="login_acesso">Login</a>
-                    </li>
-                    <li>
-                        <a class="botao destaque" id="cadastrar_acesso">Cadastre-se</a>
-                    </li>
-                </nav>
+                    <nav class="links autenticacao">
+                        <li>
+                            <a class="botao" id="login_acesso">Login</a>
+                        </li>
+                        <li>
+                            <a class="botao destaque" id="cadastrar_acesso">Cadastre-se</a>
+                        </li>
+                    </nav>
+                </div>
             </div>
         </div>
     </header>
@@ -309,15 +312,16 @@
                 <div class="border-input"></div>
                 <input type="text" class="input" placeholder="Seu e-mail">
                 <div class="border-input"></div>
-                <input type="text" class="input" placeholder="Crie uma senha">
+                <input type="password" class="input" placeholder="Crie uma senha">
                 <div class="border-input"></div>
-                <input type="text" class="input" placeholder="Confirmar senha">
+                <input type="password" class="input" placeholder="Confirmar senha">
                 <div class="border-input"></div>
-                <button class="enter">CADASTRAR-ME</button>
+                <button class="enter">CADASTRAR-SE</button>
             </form>
         </div>
     </div>
 
     <script src="js/modal.js"></script>
 </body>
+
 </html>

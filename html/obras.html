@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Art: Obras</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/obras.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nothing+You+Could+Do&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!--BARRA DE MENU-->
+        <div class="menu">
+            <div class="container">
+                <div class="logo">
+                    <h1>Colorful Art</h1>
+                    <img src="../img/brush.png" alt="">
+                </div>
+                <nav class="links navegacao">
+                    <ul>
+                        <li>
+                            <a href="../index.html">Início</a>
+                        </li>
+                        <li>
+                            <a href="obras.html">Obras</a>
+                        </li>
+                        <li>
+                            <a href="artistas.html">Artistas</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav class="links autenticacao">
+                    <li>
+                        <a class="botao" id="login_acesso">Login</a>
+                    </li>
+                    <li>
+                        <a class="botao destaque" id="cadastrar_acesso">Cadastre-se</a>
+                    </li>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+    </main>
+
+    <!--RODAPÉ-->
+    <footer>
+        <div class="rodape">
+            <div class="container">
+                <div class="conteudo-footer flex">
+                    <div class="coluna">
+                        <h4>Obras</h4>
+                        <ul>
+                            <li>
+                                <a href="">Clássica</a>
+                            </li>
+                            <li>
+                                <a href="">Medieval</a>
+                            </li>
+                            <li>
+                                <a href="">Moderna</a>
+                            </li>
+                            <li>
+                                <a href="">Contemporânea</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="coluna">
+                        <h4>Artistas</h4>
+                        <ul>
+                            <li>
+                                <a href="">Top Artistas</a>
+                            </li>
+                            <li>
+                                <a href="">Artistas Revelação</a>
+                            </li>
+                            <li>
+                                <a href="">Artistas Nacionais</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="coluna">
+                        <h4>Autenticação</h4>
+                        <ul>
+                            <li>
+                                <a id="login_rodape">Fazer Login</a>
+                            </li>
+                            <li>
+                                <a id="cadastro_rodape">Criar uma conta</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="contato flex">
+                    <div class="redes_sociais">
+                        <h4>Siga a Colerful Art nas redes sociais</h4>
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/giwkiss/" target="_blank">
+                                    <img src="../img/facebook.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/nuvemexotica/?hl=pt-br" target="_blank">
+                                    <img src="../img/instagram.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/NuvemExotica" target="_blank">
+                                    <img src="../img/twitter.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCc0SGr_WWw9t4iKfi2NP6KQ?view_as=subscriber"
+                                    target="_blank">
+                                    <img src="../img/youtube.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="email">
+                        <h4>Contate-nos</h4>
+                        <a href="mailto:gisele.flor@bandtec.com.br">
+                            <img src="../img/email.png" alt="">
+                            <span>gisele.flor@bandtec.com.br</span>
+                        </a>
+                    </div>
+                </div>
+                <hr>
+                <div class="finalizacao">
+                    <q>Os espelhos são usados para ver o rosto; a arte para ver a alma.</q> (George Bernard Shaw) <br>
+                    <span>Feito com &#128155; em São Paulo, &copy; 2020 Colorful Art</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL LOGIN-->
+    <div id="modal-login" class="modal-container flex">
+        <div class="modal">
+            <button class="fechar">X</button>
+            <h3>Login</h3>
+            <img src="../img/palette.png" alt="tela">
+            <form>
+                <input type="text" class="input" placeholder="E-mail">
+                <div class="border-input"></div>
+                <input type="password" class="input" placeholder="Senha">
+                <div class="border-input"></div>
+                <input type="checkbox"><span>Lembrar identificação do usuário</span>
+                <button class="enter">ENTRAR</button>
+                <button class="enter face">ENTRAR COM O FACEBOOK</button>
+            </form>
+        </div>
+    </div>
+
+    <!--MODAL CADASTRO-->
+    <div id="modal-cadastro" class="modal-container flex">
+        <div class="modal register">
+            <button class="fechar">X</button>
+            <h3>Faça parte da comunidade Colorful Art</h3>
+            <img src="../img/paint.png" alt="paleta">
+            <form>
+                <input type="text" class="input" placeholder="Seu nome">
+                <div class="border-input"></div>
+                <input type="text" class="input" placeholder="Seu e-mail">
+                <div class="border-input"></div>
+                <input type="text" class="input" placeholder="Crie uma senha">
+                <div class="border-input"></div>
+                <input type="text" class="input" placeholder="Confirmar senha">
+                <div class="border-input"></div>
+                <button class="enter">CADASTRAR-SE</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/modal.js"></script>
+    
+</body>
+</html>

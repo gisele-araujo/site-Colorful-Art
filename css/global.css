@@ -1,3 +1,5 @@
+/*Aqui se encontra a estilização do body, header, footer, modal e de seletores padrões.*/
+
 * {
     margin: 0;
     padding: 0;
@@ -19,11 +21,13 @@ body {
     justify-content: center;
     align-items: center;
 }
- /*BARRA DE MENU*/
 
-header {
+
+/*BARRA DE MENU*/
+
+.cabecalho {
     position: absolute;
-    z-index: 1; 
+    z-index: 40;
 }
 
 .menu {
@@ -96,187 +100,6 @@ header {
 .destaque{
     background-color: #DAA520;
     color: #fff;
-}
-
-
-/*BANNER*/
-
-.galeria {
-    overflow: hidden;
-}
-
-.imagens {
-    margin-top: 90px;
-    width: 100%;
-    height: 550px;
-    position: relative;
-    background-color: #000c;
-}
-
-.imagens img {
-    width: 100%;
-    height: 550px;
-    object-fit: cover;
-    object-position: center;
-    position: absolute;
-    opacity: 0;
-    animation: animacao 20s infinite;
-    
-}
-
-.imagens img:nth-child(2) {
-    object-position: top;
-}
-
-@keyframes animacao {
-    25% {opacity: 1;}
-    50% {opacity: 0;}
-}
-
-.imagens img:nth-child(1){
-    animation-delay: 0s;
-}
-.imagens img:nth-child(2){
-    animation-delay: 5s; 
-}
-.imagens img:nth-child(3){
-    animation-delay: 10s;   
-}
-.imagens img:nth-child(4){
-    animation-delay: 15s; 
-}/*para as imagens não ficarem sobrepostas, é necessário adicionar um delay em cada imagem*/
-
-/*FRASE*/
-
-.frase {
-    margin: 80px auto;
-}
-
-.frase q {
-    font-size: 30px;
-}
-
-.frase span {
-    font-family: 'Nothing You Could Do', cursive;
-    font-size: 20px;
-    display: block;
-    padding-top: 15px;
-}
-
-/*ARTISTAS E OBRAS*/
-
-.maiores_artistas {
-    height: 600px;
-}
-
-.maiores_obras {
-    background-color: #DAA520;
-    height: 600px;
-}
-
-.maiores_artistas h2, .maiores_obras h2 {
-    font-size: 22px;
-    text-align: center;
-    text-transform: uppercase;
-    padding-top: 80px;
-}
-
-.maiores_obras h2 {
-    color: #f7f7eb;
-}
-
-.maiores_artistas hr, .maiores_obras hr{
-    margin: 40px 0px;
-}
-
-.link-artista, .link-obra {
-    margin: 40px auto;
-    text-align: center;
-}
-
-.link-artista a, .link-obra a{
-    font-weight: bold;
-    display: inline-block;
-    color: #f7f7eb;
-    background-color: #DAA520;
-    font-size: 16px;
-    text-decoration: none;
-    border: 1px solid #f7f7eb;
-    border-radius: 50px;
-    width: 200px;
-    padding: 15px;
-    transition: all 0.3s;
-}
-
-
-.link-artista a:hover, .link-obra a:hover {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-}
-
-.art {
-    width: 25%;
-    list-style: none;  
-}
-
-.art-card{
-    margin: 12px;    
-}
-
-.art-foto {
-    height: 50%;
-    overflow: hidden;
-    position: relative;
-    border-radius: 100%;
-}
-  
-.art-foto img {
-    width: 100%;
-    height: 210px;
-    object-fit: cover;
-    object-position: top;
-    transition: all 0.5s; /*delay no zoom*/
-}
-  
-.art-foto img:hover {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1); /*zoom na imagem*/
-}
-
-.art-nome {
-    background: rgba(41, 41, 41);
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    opacity: 0.8;
-}
-
-.art-nome h3 {
-    margin: 10px 0px 20px;
-    color: white;
-    font-size: 12px;
-    text-align: center;
-}
-
-.botao-art {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    overflow: hidden;
-    position: relative;
-    background-color: #F5DEB3;
-    cursor: pointer;
-    outline: none;
-}
-
-.botao-color {
-    background-color: rgb(233, 197, 106);
-}
-
-.botao-art img {
-    height: 30px;
 }
 
 
