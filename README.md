@@ -1,2 +1,4 @@
 # site-Colorful-Art
-Projeto de PI 
+
+Projeto individual de PI 
+Feito por mim &#128155;
