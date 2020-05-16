@@ -25,7 +25,7 @@ body {
 
 /*BARRA DE MENU*/
 
-.cabecalho {
+header {
     position: absolute;
     z-index: 40;
 }

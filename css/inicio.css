@@ -127,8 +127,9 @@
     height: 50%;
     overflow: hidden;
     position: relative;
-    border: 7px double gold;
+    /* border: 7px double gold; */
     border-radius: 100%;
+    background-color: #000;
 }
   
 .art-foto img {
@@ -146,18 +147,17 @@
 }
 
 .art-nome {
-    background: rgba(41, 41, 41);
+    background-color: #000b;
+    box-shadow: 0px 0px 22px 15px #000c;
+    opacity: 0.9;
     position: absolute;
     width: 100%;
     bottom: 0;
-    opacity: 0.8;
-}
-
-.art-nome h3 {
-    margin: 10px 0px 20px;
+    padding: 10px 0px 20px;
     color: white;
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
+    overflow: hidden;
 }
 
 .botao-art {
