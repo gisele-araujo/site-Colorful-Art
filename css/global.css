@@ -11,6 +11,18 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+h1 {
+    font-size: 38px; /* PARA TÍTULOS */
+}
+
+h2 {
+    font-size: 20px; /* PARA SUBTÍTULOS*/
+}
+
+p {
+    font-size: 16px; /* PARA CORPO DO TEXTO*/
+}
+
 .container {
     width: 80%;
     margin: auto;
@@ -183,6 +195,7 @@ header {
 
 .modal {
     box-sizing: border-box;
+    overflow: hidden;
     text-align: center;
     background-color: #fff;
     width: 30%;
@@ -262,6 +275,7 @@ header {
     text-align: center;
     background-color: #DAA520;
     color: #fff;
+    border: none;
     border-radius: 30px;
     font-size: 14px;
     outline: none;

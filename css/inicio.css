@@ -56,7 +56,6 @@
 }
 
 .frase span {
-    font-family: 'Nothing You Could Do', cursive;
     font-size: 20px;
     display: block;
     padding-top: 15px;
@@ -74,7 +73,7 @@
 }
 
 .maiores_artistas h2, .maiores_obras h2 {
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
     text-transform: uppercase;
     padding-top: 80px;
