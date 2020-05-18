@@ -76,6 +76,10 @@ header {
     padding: 30px;
 }
 
+@media (max-width: 820px) {
+    .navegacao { display: none; }
+}
+
 .navegacao ul, .navegacao li, .autenticacao li{
     display: inline-block;
 }
@@ -96,6 +100,9 @@ header {
     float: right;
     padding: 20px;
 
+}
+@media (max-width: 1150px) {
+    .autenticacao { display: none; }
 }
 
 .botao{

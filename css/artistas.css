@@ -34,6 +34,7 @@ main {
 
 .busca {
     border: 1px solid #daa520;
+    border-radius: 18px 0 0 18px;
     width: 400px;
     padding: 10px;
     font-size: 14px;
@@ -46,6 +47,7 @@ main {
     padding: 8px;
     background-color: #daa520;
     border: none;
+    border-radius: 0 18px 18px 0;
     cursor: pointer;
 }
 .busca-botao img {
@@ -64,8 +66,13 @@ main {
     flex-direction: column;
 }
 
+.periodos-artisticos hr {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
 .mov-card {
-    margin: 30px 0;
+    margin-bottom: 30px;
     list-style: none;
     z-index: -10;
     
