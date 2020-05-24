@@ -57,7 +57,7 @@ main {
 /*ARTE POR PERIODO*/
 
 .periodos-artisticos {
-    margin: 30px 0;
+    margin: 50px 0;
     overflow: hidden;
     
 }
@@ -112,4 +112,16 @@ main {
     -moz-transform: scale(1.2);
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
+}
+
+.divulgacao {
+    background-color: #daa520;
+    color: #f7f7eb;
+    padding: 60px 0;
+    text-align: center;
+    font-weight: 100;
+}
+
+.conteudo-divulgacao h2{
+    padding-bottom: 20px;
 }

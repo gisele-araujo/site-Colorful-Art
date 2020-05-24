@@ -76,33 +76,29 @@ header {
     padding: 30px;
 }
 
-@media (max-width: 820px) {
-    .navegacao { display: none; }
-}
 
-.navegacao ul, .navegacao li, .autenticacao li{
+.navegacao li, .autenticacao li{
     display: inline-block;
-}
-
-.navegacao li:hover{
-    border-bottom: 2px solid #DAA520;
 }
 
 .navegacao a {
     color: #000;
-    padding: 30px;
+    padding: 35px 30px;
+    
+}
+
+.navegacao a:hover{
+    transition: 0.2s linear;
+    border-bottom: 3px solid #DAA520;
 }
 
 .menu a {
     text-decoration: none;
 }
+
 .autenticacao {
     float: right;
     padding: 20px;
-
-}
-@media (max-width: 1150px) {
-    .autenticacao { display: none; }
 }
 
 .botao{
@@ -119,6 +115,54 @@ header {
 .destaque{
     background-color: #DAA520;
     color: #fff;
+}
+
+@media (max-width: 1150px) {
+    .autenticacao { display: none; }
+}
+
+/*MINI MENU*/
+
+.menu-mini img{
+    float: right;
+    width: 55px;
+    margin: 15px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 820px) {
+    .navegacao { display: none; }
+    .menu-mini img{display: block;}
+}
+
+.sub-menu {
+    flex-direction: column;
+    position: absolute;
+    overflow: hidden;
+    background-color: #f7f7eb;
+    top: 70px;
+    right: 5%;
+    display: none;
+    border-radius: 5px;
+    border: 5px double #138af0;
+    box-shadow: 0 0 0 8px #DAA520;
+    
+}
+
+.sub-menu li {
+    padding: 15px;
+    border-bottom: 1px solid #138af0;
+    list-style: none;
+    font-size: 14px;
+}
+
+.sub-menu a {
+    color: #DAA520;
+}
+
+.menu-mini:hover > .sub-menu {
+    display: flex;
 }
 
 
@@ -207,7 +251,7 @@ header {
     background-color: #fff;
     width: 30%;
     height: 440px;
-    padding: 40px;
+    padding: 4%;
     border: 5px double #DAA520;
     box-shadow: 0 0 0 10px white;
     border-radius: 8px;
@@ -257,8 +301,10 @@ header {
     margin-top: 7px;
     cursor: pointer;
     font-weight: bold;
-    color: #000;
-    background-color: rgb(233, 197, 106);
+    color: #DAA520;
+    background-color: rgb(250, 241, 219);
+    border: none;
+    outline: none;
 }
 
 .input {
