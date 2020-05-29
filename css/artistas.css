@@ -113,3 +113,23 @@ main {
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
 }
+
+/*FRASE*/
+
+.frase {
+    background-color: #daa520;
+    color: #f7f7eb;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.frase q {
+    font-size: 20px;
+}
+
+.frase span {
+    font-size: 16px;
+    display: block;
+    padding-top: 15px;
+}
+

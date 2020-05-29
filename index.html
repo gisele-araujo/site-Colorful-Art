@@ -43,7 +43,6 @@
                             </li>
                             <li>
                                 <a href="html/obras.html">Obras</a>
-
                             </li>
                             <li>
                                 <a href="html/artistas.html">Artistas</a>
@@ -75,13 +74,30 @@
             </div>
         </div>
 
-        <!--FRASE-->
-        <div class="frase">
-            <div class="container">
-                <q>A Arte diz o indizível, exprime o inexprimível, traduz o intraduzível.</q>
-                <span>Leonardo Da Vinci</span>
+        <!--QUIZ-->
+        <section class="apresentacao">
+            <div class="container flex page-quiz1">
+                <div class="texto">
+                    <img src="img/moldura.png" class="moldura">
+                    <div class="texto-conteudo">
+                        <h1>Mergulhe no fascinante mundo das artes plásticas</h1>
+                        <hr>
+                        <p>Descubra milhares de pinturas, esculturas e artistas na Colorful Art, o maior museu
+                            online.
+                            Está perdido e não sabe por onde começar? Faça o nosso quiz e descubra qual movimento
+                            artístico
+                            tem mais a ver com você!</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="botao-quiz flex">
+                        <a href="#">Começar o Quiz &#9658; </a>
+                    </h3>
+                </div>
             </div>
-        </div>
+        </section>
+
+
 
         <!--OBRAS-->
         <section class="maiores_obras">
@@ -90,9 +106,11 @@
                 <hr>
                 <div class="conjunto">
                     <ul class="flex">
-                        <button class="botao-art flex">
-                            <img src="img/before.png" alt="Anterior">
-                        </button>
+                        <div>
+                            <button class="botao-art after flex">
+                                &#9668;
+                            </button>
+                        </div>
                         <li class="art">
                             <div class="art-card">
                                 <div class="art-foto">
@@ -133,12 +151,14 @@
                                 </div>
                             </div>
                         </li>
-                        <button class="botao-art flex">
-                            <img src="img/after.png" alt="Próximo">
-                        </button>
+                        <div>
+                            <button class="botao-art before flex">
+                                &#9658;
+                            </button>
+                        </div>
                     </ul>
                 </div>
-                <h3 class="link-obra">
+                <h3 class="botao-principal">
                     <a href="html/obras.html">Ver mais obras</a>
                 </h3>
             </div>
@@ -151,9 +171,11 @@
                 <hr>
                 <div class="conjunto">
                     <ul class="flex">
-                        <button class="botao-art flex botao-color">
-                            <img src="img/before.png" alt="Anterior">
-                        </button>
+                        <div>
+                            <button class="botao-art after flex">
+                                &#9668;
+                            </button>
+                        </div>
                         <li class="art">
                             <div class="art-card">
                                 <div class="art-foto">
@@ -194,12 +216,14 @@
                                 </div>
                             </div>
                         </li>
-                        <button class="botao-art flex botao-color">
-                            <img src="img/after.png" alt="Próximo">
-                        </button>
+                        <div>
+                            <button class="botao-art before flex">
+                                &#9658;
+                            </button>
+                        </div>
                     </ul>
                 </div>
-                <h3 class="link-artista">
+                <h3 class="botao-principal">
                     <a href="html/artistas.html">Ver mais artistas</a>
                 </h3>
             </div>
@@ -322,7 +346,7 @@
         <div class="modal register">
             <button class="fechar">X</button>
             <h3>Faça parte da comunidade Colorful Art</h3>
-            <img src="img/paint.png" alt="paleta">
+            <img src="img/tela.png" alt="paleta">
             <form>
                 <input type="text" class="input" placeholder="Seu nome">
                 <div class="border-input"></div>

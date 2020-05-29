@@ -7,14 +7,14 @@
 .imagens {
     margin-top: 86px;
     width: 100%;
-    height: 550px;
+    height: 90vh;
     position: relative;
     background-color: #000c;
 }
 
 .imagens img {
     width: 100%;
-    height: 550px;
+    height: 90vh;
     object-fit: cover;
     object-position: center;
     position: absolute;
@@ -45,21 +45,85 @@
     animation-delay: 15s; 
 }/*para as imagens não ficarem sobrepostas, é necessário adicionar um delay em cada imagem*/
 
-/*FRASE*/
 
-.frase {
-    margin: 80px auto;
+/*APRESENTAÇÃO*/
+
+.apresentacao {
+    height: 520px;
+    padding: 80px 0;
+    position: relative;
 }
 
-.frase q {
-    font-size: 30px;
+.texto hr {
+    margin: 20px 0;
 }
 
-.frase span {
-    font-size: 20px;
-    display: block;
-    padding-top: 15px;
+.moldura {
+    width: 100%;
+    height: 500px;
 }
+
+.texto-conteudo {
+    position: absolute;
+    overflow: hidden;
+    bottom: 0;
+    top: 26%;
+    left: 19%;
+    width: 38%;
+    height: 300px;
+}
+
+.texto-conteudo p {
+    color: #363636;
+}
+
+@media (max-width: 1140px) {
+    .texto-conteudo h1 {
+        font-size: 30px;
+    }
+    .moldura {
+        display: none;
+    }
+    .texto-conteudo {
+        background-color: #DAA52055;
+        border: 10px double #DAA520;
+        padding: 40px;
+        border-radius: 10px;
+    }
+    .apresentacao .flex {
+        justify-content: space-between;
+    }
+
+}
+
+.botao-quiz {
+    margin: 0px 50px;
+    background-color: #DAA520;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.botao-quiz a{
+    text-decoration: none;
+    color: #f7f7eb;   
+}
+
+.botao-quiz:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    background-color: rgb(243, 185, 40);
+}
+
+/*QUIZ*/
+
+
+
 
 /*ARTISTAS E OBRAS*/
 
@@ -87,31 +151,6 @@
     margin: 40px 0px;
 }
 
-.link-artista, .link-obra {
-    margin: 40px auto;
-    text-align: center;
-}
-
-.link-artista a, .link-obra a{
-    font-weight: bold;
-    display: inline-block;
-    color: #f7f7eb;
-    background-color: #0387ca;
-    font-size: 16px;
-    text-decoration: none;
-    border-radius: 50px;
-    width: 200px;
-    padding: 15px;
-    transition: all 0.3s;
-}
-
-
-.link-artista a:hover, .link-obra a:hover {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-}
-
 .art {
     width: 25%;
     list-style: none;  
@@ -126,7 +165,7 @@
     overflow: hidden;
     position: relative;
     /* border: 7px double gold; */
-    border-radius: 100%;
+    border-radius: 50%;
     background-color: #000;
 }
   
@@ -162,17 +201,18 @@
     width: 45px;
     height: 45px;
     border-radius: 50%;
+    border: none;
+    color: #D2691E;
     overflow: hidden;
     position: relative;
-    background-color: #F5DEB3;
+    background-color: transparent; 
     cursor: pointer;
     outline: none;
+    font-size: 45px;  
 }
 
-.botao-color {
-    background-color: rgb(233, 197, 106);
+.botao-art:hover {
+    color: rgb(241, 124, 40);
 }
 
-.botao-art img {
-    height: 30px;
-}
+

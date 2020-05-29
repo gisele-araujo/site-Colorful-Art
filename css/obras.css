@@ -117,11 +117,15 @@ main {
 .divulgacao {
     background-color: #daa520;
     color: #f7f7eb;
-    padding: 60px 0;
+    padding: 60px 0 20px;
     text-align: center;
     font-weight: 100;
 }
 
 .conteudo-divulgacao h2{
     padding-bottom: 20px;
+}
+
+.conteudo-divulgacao .botao-principal{
+    margin-top: 20px;
 }
