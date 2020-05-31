@@ -1,5 +1,7 @@
 // MODAL 
+
 function iniciaModal (modalID) { 
+    
     const modal = document.getElementById (modalID); 
     modal.classList.add('mostrar'); //ativar classe .mostrar 
     modal.addEventListener('click', (event) => {

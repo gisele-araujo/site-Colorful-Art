@@ -21,6 +21,9 @@ main {
     color: #fff;
     padding: 30px;
     background-color: #222;
+    border-radius: 5px;
+    width: 245px;
+    margin: 55px 30px;
 }
 
 /*BUSCA*/

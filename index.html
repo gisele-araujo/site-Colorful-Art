@@ -82,9 +82,9 @@
                     <div class="texto-conteudo">
                         <h1>Mergulhe no fascinante mundo das artes plásticas</h1>
                         <hr>
-                        <p>Descubra milhares de pinturas, esculturas e artistas na Colorful Art, o maior museu
-                            online.
-                            Está perdido e não sabe por onde começar? Faça o nosso quiz e descubra qual movimento
+                        <p>Descubra milhares de pinturas, esculturas e artistas na Colorful Art, seu museu online. <br>
+                            <strong>Está perdido e não sabe por onde começar?</strong> Faça o nosso quiz e descubra qual
+                            movimento
                             artístico
                             tem mais a ver com você!</p>
                     </div>
@@ -107,16 +107,16 @@
                 <div class="conjunto">
                     <ul class="flex">
                         <div>
-                            <button class="botao-art after flex">
+                            <button class="botao-art after flex" onclick="troca_obras_anterior()">
                                 &#9668;
                             </button>
                         </div>
                         <li class="art">
                             <div class="art-card">
                                 <div class="art-foto">
-                                    <img src="img/paintings/gogh-starry-night.jpg" alt="A Noite Estrelada">
+                                    <img src="img/paintings/gogh-starry-night.jpg" alt="A Noite Estrelada" id="obra1">
                                     <div class="art-nome">
-                                        <h3>A Noite Estrelada</h3>
+                                        <h3 id="nome_obra1">A Noite Estrelada</h3>
                                     </div>
                                 </div>
                             </div>
@@ -124,9 +124,9 @@
                         <li class="art">
                             <div class="art-card">
                                 <div class="art-foto">
-                                    <img src="img/paintings/vinci-monalisa.jpg" alt="Monalisa">
+                                    <img src="img/paintings/vinci-monalisa.jpg" alt="Monalisa" id="obra2">
                                     <div class="art-nome">
-                                        <h3>Monalisa</h3>
+                                        <h3 id="nome_obra2">Monalisa</h3>
                                     </div>
                                 </div>
                             </div>
@@ -134,9 +134,9 @@
                         <li class="art">
                             <div class="art-card">
                                 <div class="art-foto">
-                                    <img src="img/paintings/munch-the-scream.jpg" alt="O Grito">
+                                    <img src="img/paintings/munch-the-scream.jpg" alt="O Grito" id="obra3">
                                     <div class="art-nome">
-                                        <h3>O Grito</h3>
+                                        <h3 id="nome_obra3">O Grito</h3>
                                     </div>
                                 </div>
                             </div>
@@ -144,15 +144,15 @@
                         <li class="art">
                             <div class="art-card">
                                 <div class="art-foto">
-                                    <img src="img/paintings/picasso-vieux.jpg" alt="Velho guitarrista cego">
+                                    <img src="img/paintings/picasso-vieux.jpg" alt="Velho guitarrista cego" id="obra4">
                                     <div class="art-nome">
-                                        <h3>Velho guitarrista cego</h3>
+                                        <h3 id="nome_obra4">Velho Guitarrista <br> Cego</h3>
                                     </div>
                                 </div>
                             </div>
                         </li>
                         <div>
-                            <button class="botao-art before flex">
+                            <button class="botao-art before flex" onclick="troca_obras_proximo()">
                                 &#9658;
                             </button>
                         </div>
@@ -172,16 +172,16 @@
                 <div class="conjunto">
                     <ul class="flex">
                         <div>
-                            <button class="botao-art after flex">
+                            <button class="botao-art after flex" onclick="troca_artistas_anterior()">
                                 &#9668;
                             </button>
                         </div>
                         <li class="art">
                             <div class="art-card">
                                 <div class="art-foto">
-                                    <img src="img/paintings/gogh-auto-retrato.jpg" alt="Van Gogh">
+                                    <img src="img/paintings/gogh-auto-retrato.jpg" alt="Van Gogh" id="artista1">
                                     <div class="art-nome">
-                                        <h3>Van Gogh</h3>
+                                        <h3 id="nome_art1">Van Gogh</h3>
                                     </div>
                                 </div>
                             </div>
@@ -189,9 +189,9 @@
                         <li class="art">
                             <div class="art-card">
                                 <div class="art-foto">
-                                    <img src="img/paintings/Edvard_Munch.jpg" alt="Munch">
+                                    <img src="img/paintings/Edvard_Munch.jpg" alt="Munch" id="artista2">
                                     <div class="art-nome">
-                                        <h3>Edvard Munch</h3>
+                                        <h3 id="nome_art2">Edvard Munch</h3>
                                     </div>
                                 </div>
                             </div>
@@ -199,9 +199,9 @@
                         <li class="art">
                             <div class="art-card">
                                 <div class="art-foto">
-                                    <img src="img/paintings/Sandro_Botticelli.jpg" alt="Botticelli">
+                                    <img src="img/paintings/Sandro_Botticelli.jpg" alt="Botticelli" id="artista3">
                                     <div class="art-nome">
-                                        <h3>Sandro Boticelli</h3>
+                                        <h3 id="nome_art3">Sandro Botticelli</h3>
                                     </div>
                                 </div>
                             </div>
@@ -209,15 +209,15 @@
                         <li class="art">
                             <div class="art-card">
                                 <div class="art-foto">
-                                    <img src="img/paintings/Leonardo-da-Vinci.jpg" alt="Da vinci">
+                                    <img src="img/paintings/Leonardo-da-Vinci.jpg" alt="Da vinci" id="artista4">
                                     <div class="art-nome">
-                                        <h3>Leonardo da Vinci</h3>
+                                        <h3 id="nome_art4">Leonardo da Vinci</h3>
                                     </div>
                                 </div>
                             </div>
                         </li>
                         <div>
-                            <button class="botao-art before flex">
+                            <button class="botao-art before flex" onclick="troca_artistas_proximo()">
                                 &#9658;
                             </button>
                         </div>
@@ -362,6 +362,6 @@
     </div>
 
     <script src="js/modal.js"></script>
+    <script src="js/carrossel.js"></script>
 </body>
-
 </html>
