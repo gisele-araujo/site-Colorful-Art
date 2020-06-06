@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -26,6 +26,8 @@
                         </a>
                         <img src="img/brush.png" alt="">
                     </div>
+
+                    <!--mini menu-->
                     <div class="menu-mini">
                         <img src="img/menu.png" alt="">
                         <ul class="sub-menu flex">
@@ -36,10 +38,11 @@
                             <li><a href="#">Criar uma conta</a></li>
                         </ul>
                     </div>
+
                     <nav class="links navegacao">
                         <ul>
                             <li>
-                                <a href="index.html">Início</a>
+                                <a href="index.html" class="page_atual">Início</a>
                             </li>
                             <li>
                                 <a href="html/obras.html">Obras</a>
@@ -77,20 +80,11 @@
         <!--QUIZ-->
         <section class="apresentacao">
             <div class="container flex page-quiz1">
-                <div class="texto">
+                <div class="texto" data-anime="left">
                     <img src="img/moldura.png" class="moldura">
-                    <div class="texto-conteudo">
-                        <h1>Mergulhe no fascinante mundo das artes plásticas</h1>
-                        <hr>
-                        <p>Descubra milhares de pinturas, esculturas e artistas na Colorful Art, seu museu online. <br>
-                            <strong>Está perdido e não sabe por onde começar?</strong> Faça o nosso quiz e descubra qual
-                            movimento
-                            artístico
-                            tem mais a ver com você!</p>
-                    </div>
                 </div>
                 <div>
-                    <h3 class="botao-quiz flex">
+                    <h3 class="botao-quiz flex" data-anime="right">
                         <a href="#">Começar o Quiz &#9658; </a>
                     </h3>
                 </div>
@@ -327,14 +321,17 @@
     <div id="modal-login" class="modal-container flex">
         <div class="modal">
             <button class="fechar">X</button>
-            <h3>Login</h3>
+            <h2>Login</h2>
             <img src="img/palette.png" alt="tela">
             <form>
-                <input type="text" class="input" placeholder="E-mail">
+                <input type="email" class="input" placeholder="E-mail">
                 <div class="border-input"></div>
+
                 <input type="password" class="input" placeholder="Senha">
                 <div class="border-input"></div>
+
                 <input type="checkbox"><span>Lembrar identificação do usuário</span>
+
                 <button class="enter">ENTRAR</button>
                 <button class="enter face">ENTRAR COM O FACEBOOK</button>
             </form>
@@ -345,23 +342,52 @@
     <div id="modal-cadastro" class="modal-container flex">
         <div class="modal register">
             <button class="fechar">X</button>
-            <h3>Faça parte da comunidade Colorful Art</h3>
+            <h2>Faça parte da comunidade Colorful Art</h2>
             <img src="img/tela.png" alt="paleta">
             <form>
-                <input type="text" class="input" placeholder="Seu nome">
+                <input type="text" class="input" placeholder="Seu nome" id="valida_nome">
                 <div class="border-input"></div>
-                <input type="text" class="input" placeholder="Seu e-mail">
-                <div class="border-input"></div>
-                <input type="password" class="input" placeholder="Crie uma senha">
-                <div class="border-input"></div>
-                <input type="password" class="input" placeholder="Confirmar senha">
-                <div class="border-input"></div>
-                <button class="enter">CADASTRAR-SE</button>
+
+                <input type="email" class="input" placeholder="Seu e-mail" id="valida_email"
+                    onkeyup="validacao_email()">
+                <div class="border-input" id="mensagem_email"></div>
+
+                <input type="password" class="input" placeholder="Crie uma senha" id="valida_senha"
+                    onkeyup="validacao_senha()">
+                <div class="border-input" id="mensagem_senha1"></div>
+
+                <input type="password" class="input" placeholder="Confirmar senha" id="confirma_senha">
+                <div class="border-input" id="mensagem_senha2"></div>
+
+                <button class="enter" onclick="cadastrar()">CADASTRAR-SE</button>
             </form>
         </div>
     </div>
+    
 
+    <script>
+        // SCRIPT EFEITO [DATA-ANIME] DA SESSÃO APRESENTAÇÃO
+
+        const target = document.querySelectorAll('[data-anime]');
+
+        function animeScroll() {
+            const windowTop = window.pageYOffset - 150;
+            target.forEach(function (element) {
+                if (windowTop > element.offsetTop) {
+                    element.classList.add('animate');
+                }
+            })
+        }
+        animeScroll()
+        if (target.length) {
+            window.addEventListener('scroll', function () {
+                animeScroll();
+            });
+        }
+    </script>
     <script src="js/modal.js"></script>
     <script src="js/carrossel.js"></script>
+
 </body>
+
 </html>

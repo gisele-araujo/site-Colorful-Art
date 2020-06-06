@@ -44,7 +44,7 @@
                             <a href="obras.html">Obras</a>
                         </li>
                         <li>
-                            <a href="artistas.html">Artistas</a>
+                            <a href="artistas.html" class="page_atual">Artistas</a>
                         </li>
                     </ul>
                 </nav>
@@ -66,7 +66,7 @@
 
         <section class="title">
             <div class="text">
-                <h2>Conheça os maiores artistas de todos os tempos em um só lugar</h2>
+                <h2 data-digita>Conheça os maiores artistas de todos os tempos em um só lugar</h2>
             </div>
         </section>
 
@@ -89,7 +89,7 @@
                 <h2>ARTISTAS POR CATEGORIA</h2>
                 <hr>
                 <ul>
-                    <li class="mov-card">
+                    <li class="mov-card"  data-anime="left">
                         <div class="mov-foto">
                             <img src="../img/paintings/Leonardo-da-Vinci.jpg">
                             <div class="mov-nome">
@@ -97,7 +97,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="mov-card">
+                    <li class="mov-card" data-anime="left">
                         <div class="mov-foto">
                             <img src="../img/paintings/susano-correia.jpg">
                             <div class="mov-nome">
@@ -105,7 +105,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="mov-card">
+                    <li class="mov-card" data-anime="left">
                         <div class="mov-foto">
                             <img src="../img/paintings/tarsila-do-amaral.jpg">
                             <div class="mov-nome">
@@ -221,7 +221,7 @@
     <div id="modal-login" class="modal-container flex">
         <div class="modal">
             <button class="fechar">X</button>
-            <h3>Login</h3>
+            <h2>Login</h2>
             <img src="../img/palette.png" alt="tela">
             <form>
                 <input type="text" class="input" placeholder="E-mail">
@@ -239,23 +239,24 @@
     <div id="modal-cadastro" class="modal-container flex">
         <div class="modal register">
             <button class="fechar">X</button>
-            <h3>Faça parte da comunidade Colorful Art</h3>
+            <h2>Faça parte da comunidade Colorful Art</h2>
             <img src="../img/tela.png" alt="paleta">
             <form>
-                <input type="text" class="input" placeholder="Seu nome">
+                <input type="text" class="input" placeholder="Seu nome" id="valida_nome">
                 <div class="border-input"></div>
-                <input type="text" class="input" placeholder="Seu e-mail">
-                <div class="border-input"></div>
-                <input type="password" class="input" placeholder="Crie uma senha">
-                <div class="border-input"></div>
-                <input type="password" class="input" placeholder="Confirmar senha">
-                <div class="border-input"></div>
-                <button class="enter">CADASTRAR-SE</button>
+                <input type="text" class="input" placeholder="Seu e-mail" id="valida_email" onkeyup="validacao_email()">
+                <div class="border-input" id="mensagem_email"></div>
+                <input type="password" class="input" placeholder="Crie uma senha" id="valida_senha" onkeyup="validacao_senha()">
+                <div class="border-input" id="mensagem_senha1"></div>
+                <input type="password" class="input" placeholder="Confirmar senha" id="confirma_senha">
+                <div class="border-input" id="mensagem_senha2"></div>
+                <button class="enter" onclick="cadastrar()">CADASTRAR-SE</button>
             </form>
         </div>
     </div>
 
     <script src="../js/modal.js"></script>
+    <script src="../js/animacoes.js"></script>
 
 
 </body>

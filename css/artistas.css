@@ -22,9 +22,28 @@ main {
     padding: 30px;
     background-color: #222;
     border-radius: 5px;
-    width: 245px;
+    width: 192px;
+    height: 95px;
     margin: 55px 30px;
 }
+
+.text h2::after {
+    content: ' |';
+    opacity: 1;
+    margin-left: 5px;
+    display: inline-block;
+    animation: blink .7s infinite;
+  }
+
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
 
 /*BUSCA*/
 
@@ -75,9 +94,10 @@ main {
 }
 
 .mov-card {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     list-style: none;
     z-index: -10;
+    box-shadow: 2px 5px 10px rgb(112, 112, 112);
     
 }
 

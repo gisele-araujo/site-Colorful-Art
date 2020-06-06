@@ -1,5 +1,8 @@
 
-/*Aqui se encontra a estilização do body, header, footer, modal e de seletores padrões.*/
+/*Aqui se encontra a estilização do body, header, footer, modal e seletores padrões.*/
+
+
+/*PADRÕES*/
 
 * {
     margin: 0;
@@ -33,6 +36,32 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.botao-principal {
+    margin: 40px auto;
+    text-align: center;
+}
+
+.botao-principal a{
+    font-weight: bold;
+    display: inline-block;
+    color: #f7f7eb;
+    background-color: #0387ca;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 50px;
+    width: 200px;
+    padding: 15px;
+    transition: all 0.3s;
+}
+
+
+.botao-principal a:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    background-color: #049eeb;
 }
 
 
@@ -90,6 +119,10 @@ header {
 
 .navegacao a:hover{
     transition: 0.2s linear;
+    border-bottom: 3px solid #DAA520;
+}
+
+.page_atual{
     border-bottom: 3px solid #DAA520;
 }
 
@@ -251,8 +284,8 @@ header {
     text-align: center;
     background-color: #fff;
     width: 30%;
-    height: 440px;
-    padding: 4%;
+    height: 65%;
+    padding: 3% 4%;
     border: 5px double #DAA520;
     box-shadow: 0 0 0 10px white;
     border-radius: 8px;
@@ -275,7 +308,7 @@ header {
 }
 
 .modal.register {
-    height: 480px;
+    height: 74%;
 }
 
 .modal img {
@@ -312,13 +345,15 @@ header {
     width: 100%;
     border: none;
     outline: none;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .border-input {
-    border-bottom: 1px solid rgb(70, 70, 70);
+    border-top: 1px solid rgb(70, 70, 70);
     margin: 5px 0 18px;
     width: 100%;
+    text-align: left;
+    font-size: 13px;
 }
 
 .enter {
@@ -347,32 +382,23 @@ header {
     background-color: #049eeb;
 }
 
-/*PADRÕES*/
 
-.botao-principal {
-    margin: 40px auto;
-    text-align: center;
+/*animação de elementos*/
+
+[data-anime] {
+    opacity: 0;
+    transition: 0.6s;
 }
 
-.botao-principal a{
-    font-weight: bold;
-    display: inline-block;
-    color: #f7f7eb;
-    background-color: #0387ca;
-    font-size: 16px;
-    text-decoration: none;
-    border-radius: 50px;
-    width: 200px;
-    padding: 15px;
-    transition: all 0.3s;
+[data-anime="left"] {
+   transform: translate3d(-60px, 0px, 0px);
 }
 
-
-.botao-principal a:hover {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    background-color: #049eeb;
+[data-anime="right"] {
+   transform: translate3d(60px, 0px, 0px);
 }
 
-
+[data-anime].animate {
+   opacity: 1;
+   transform: translate3d(0px, 0px, 0px);
+}
