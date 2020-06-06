@@ -5,15 +5,11 @@ const target = document.querySelectorAll('[data-anime]');
 function animeScroll() {
     const windowTop = window.pageYOffset + (window.innerHeight * 0.75);
     target.forEach( function(element) {
-
         if (windowTop > element.offsetTop) {
             element.classList.add('animate');
         }
-
     })
-
 }
-
 animeScroll()
 
 if(target.length) {

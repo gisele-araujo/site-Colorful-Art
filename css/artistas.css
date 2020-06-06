@@ -56,24 +56,39 @@ main {
 
 .busca {
     border: 1px solid #daa520;
-    border-radius: 18px 0 0 18px;
-    width: 400px;
-    padding: 10px;
-    font-size: 14px;
+    border-radius: 23px 0 0 23px;
+    width: 600px;
+    padding: 15px;
+    font-size: 15px;
     outline: none;
     
 }
 .busca-botao {
     display: inline-block;
-    width: 40px;
+    width: 50px;
     padding: 8px;
     background-color: #daa520;
     border: none;
-    border-radius: 0 18px 18px 0;
+    border-radius: 0 23px 23px 0;
     cursor: pointer;
 }
 .busca-botao img {
     width: 20px;
+}
+
+.filtrar-search {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding-top: 5px;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+    
+}
+
+.filtrar-search img {
+    width: 30px;
 }
 
 /*ARTE POR PERIODO*/
@@ -120,7 +135,7 @@ main {
     width: 100%;
     top: 0;
     bottom: 0;
-    background-color: #000b;
+    background-color: #000a;
     position: absolute;
     color: #ffffff;
     text-align: center;
