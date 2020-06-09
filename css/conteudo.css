@@ -1,0 +1,35 @@
+.search-menu {
+    display: inline-block;
+    padding: 20px 10px;
+
+}
+
+.search-menu input{
+    width: 399px;
+    padding: 10px;
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid #daa520;
+}
+
+.links-minimizado img {
+    width: 30px;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+
+/*CONTEÚDO*/
+
+main {
+    padding: 110px 0;
+}
+
+.pinturas-galeria img{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 10px;
+    cursor: zoom-in;
+}

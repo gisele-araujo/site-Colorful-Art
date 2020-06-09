@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/artistas.css">
+    <link rel="stylesheet" href="../css/conteudo.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nothing+You+Could+Do&display=swap"
         rel="stylesheet">
 
-    <title>Colorful Art: Artistas</title>
+    <title>Colorful Art: Milhares de obras</title>
     <link rel="shortcut icon" href="../img/palette.png">
 </head>
 
@@ -18,37 +18,21 @@
     <header>
         <!--BARRA DE MENU-->
         <div class="menu">
-            <div class="container">
+            <div class="container flex">
                 <div class="logo">
                     <a href="../index.html">
                         <h1>Colorful Art</h1>
                     </a>
                     <img src="../img/brush.png" alt="">
                 </div>
-                <div class="menu-mini">
-                    <img src="../img/menu.png" alt="">
-                    <ul class="sub-menu flex">
-                        <li><a href="../index.html">Início</a></li>
-                        <li><a href="obras.html">Obras</a></li>
-                        <li><a href="artistas.html">Artistas</a></li>
-                        <li>Fazer Login</li>
-                        <li>Criar uma conta</li>
-                    </ul>
+                <div class="links-minimizado">
+                    <img src="../img/open-menu.png" alt="">
                 </div>
-                <nav class="links navegacao">
-                    <ul>
-                        <li>
-                            <a href="../index.html">Início</a>
-                        </li>
-                        <li>
-                            <a href="obras.html">Obras</a>
-                        </li>
-                        <li>
-                            <a href="artistas.html" class="page_atual">Artistas</a>
-                        </li>
-                    </ul>
-                </nav>
-
+                <div class="search-menu flex">
+                    <div>
+                        <input type="text" placeholder="Buscar pintura, escultura, artista...">
+                    </div>
+                </div>
                 <nav class="links autenticacao">
                     <li>
                         <a class="botao" id="login_acesso">Login</a>
@@ -60,76 +44,38 @@
             </div>
         </div>
     </header>
-
-    <!--BANNER-->
     <main>
-
-        <section class="title">
-            <div class="text">
-                <h2 data-digita>Conheça os maiores artistas de todos os tempos em um só lugar</h2>
+        <div class="container">
+            <div class="pinturas-galeria flex">
+                <img src="../img/paintings/botticelli-nascimento-venus.jpg" alt="">
+                <img src="../img/paintings/gogh-starry-night.jpg" alt="">
+                <img src="../img/paintings/munch-the-scream.jpg" alt="">
+                <img src="../img/paintings/picasso-vieux.jpg" alt="">
+                <img src="../img/paintings/magritte-filho-do-homem.jpg" alt="">
             </div>
-        </section>
-
-        <!--BUSCA-->
-
-        <section>
-            <div class="container">
-                <div class="search">
-                    <input type="text" class="busca" placeholder="Buscar">
-                    <button class="busca-botao">
-                        <img src="../img/search.png" alt="busca">
-                    </button>
-                </div>
+            <div class="pinturas-galeria flex">
+                <img src="../img/paintings/munch-amor-e-dor.jpg" alt="">
+                <img src="../img/paintings/vinci-monalisa.jpg" alt="">
+                <img src="../img/paintings/bellini-madonna-with-child.jpg" alt="">
+                <img src="../img/paintings/Klimt-beijo.jpg" alt="">
+                <img src="../img/paintings/bouguereau-aurora.jpg" alt="">
             </div>
-        </section>
-
-        <!--ARTISTAS-->
-        <section class="periodos-artisticos">
-            <div class="container">
-
-                <h2>
-                    <button class="filtrar-search">
-                        <img src="../img/filter.png" alt="filtrar pesquisa">
-                    </button>
-                    ARTISTAS POR CATEGORIA
-                </h2>
-                <hr>
-                <ul>
-                    <li class="mov-card" data-anime="left">
-                        <div class="mov-foto">
-                            <img src="../img/paintings/Leonardo-da-Vinci.jpg">
-                            <div class="mov-nome">
-                                <h3>Top Artistas</h3>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="mov-card" data-anime="left">
-                        <div class="mov-foto">
-                            <img src="../img/paintings/susano-correia.jpg">
-                            <div class="mov-nome">
-                                <h3>Artistas Revelação</h3>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="mov-card" data-anime="left">
-                        <div class="mov-foto">
-                            <img src="../img/paintings/tarsila-do-amaral.jpg">
-                            <div class="mov-nome">
-                                <h3>Artistas Nacionais</h3>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+            <div class="pinturas-galeria flex">
+                <img src="../img/paintings/duccio-maesta.jpg" alt="">
+                <img src="../img/paintings/gogh-noite-estrelado-sobre-rodano.jpg" alt="">
+                <img src="../img/paintings/munch-melancholy.jpg" alt="">
+                <img src="../img/paintings/picasso-jacqueline-com-flores.jpg" alt="">
+                <img src="../img/paintings/gogh-amendoeira-em-flor.jpg" alt="">
             </div>
-        </section>
+            <div class="pinturas-galeria flex">
+                <img src="../img/paintings/munch-kiss-by-the-window.jpg" alt="">
+                <img src="../img/paintings/da-forli-music-making-angel.jpg" alt="">
+                <img src="../img/paintings/dali-persistencia-da-memoria.jpg" alt="">
+                <img src="../img/paintings/grego-aquiles-ajax-jogando-damas.jpg" alt="">
+                <img src="../img/paintings/giotto-lamentation.jpg" alt="">
+            </div>
+        </div>
     </main>
-
-    <!--FRASE-->
-    <div class="frase">
-        <q>A Arte diz o indizível, exprime o inexprimível, traduz o intraduzível.</q>
-        <span>Leonardo Da Vinci</span>
-    </div>
-
     <!--RODAPÉ-->
     <footer>
         <div class="rodape">
@@ -263,9 +209,6 @@
     </div>
 
     <script src="../js/modal.js"></script>
-    <script src="../js/animacoes.js"></script>
-
-
 </body>
 
 </html>

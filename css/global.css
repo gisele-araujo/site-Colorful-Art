@@ -138,7 +138,7 @@ header {
 .botao{
     display: inline-block;
     width: 90px;
-    border: 1px solid #DAA520;
+    border: 2px solid #DAA520;
     color: #DAA520;
     font-weight: bold;
     border-radius: 50px;

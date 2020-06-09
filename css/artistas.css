@@ -55,10 +55,10 @@ main {
 }
 
 .busca {
-    border: 1px solid #daa520;
+    border: 2px solid #daa520;
     border-radius: 23px 0 0 23px;
     width: 600px;
-    padding: 15px;
+    padding: 12px;
     font-size: 15px;
     outline: none;
     
