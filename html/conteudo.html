@@ -9,12 +9,19 @@
     <link rel="stylesheet" href="../css/conteudo.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nothing+You+Could+Do&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
     <title>Colorful Art: Milhares de obras</title>
     <link rel="shortcut icon" href="../img/palette.png">
 </head>
 
 <body>
+    <div class="modal-galeria">
+        <div class="modal-content flex">
+            <img src="../img/paintings/tarsila-do-amaral.jpg" id="modal_img">
+        </div>
+        <div id="fechar_galeria">&times;</div>
+    </div>
     <header>
         <!--BARRA DE MENU-->
         <div class="menu">
@@ -45,34 +52,166 @@
         </div>
     </header>
     <main>
-        <div class="container">
+        <div >
             <div class="pinturas-galeria flex">
-                <img src="../img/paintings/botticelli-nascimento-venus.jpg" alt="">
-                <img src="../img/paintings/gogh-starry-night.jpg" alt="">
-                <img src="../img/paintings/munch-the-scream.jpg" alt="">
-                <img src="../img/paintings/picasso-vieux.jpg" alt="">
-                <img src="../img/paintings/magritte-filho-do-homem.jpg" alt="">
+                <div class="card-pesquisa">
+                    <img src="../img/paintings/botticelli-nascimento-venus.jpg" class="small_img">
+                    <div class="hover-info flex">
+                        <i class="fas fa-heart"></i><p>O nascimento de Vênus (Botticelli)</p>
+                    </div>
+                </div>
+                <div class="card-pesquisa">
+                    <img src="../img/paintings/Klimt-beijo.jpg" class="small_img">
+                    <div class="hover-info flex">
+                        <i class="fas fa-heart"></i><p>O beijo (Klimt)</p>
+                    </div>
+                </div>
+                <div class="card-pesquisa">
+                    <img src="../img/paintings/gogh-starry-night.jpg" class="small_img">
+                    <div class="hover-info flex">
+                        <i class="fas fa-heart"></i><p>A noite estrelada (Van Gogh)</p>
+                    </div>
+                </div>
+                <div class="card-pesquisa">
+                    <img src="../img/paintings/munch-the-scream.jpg" class="small_img">
+                    <div class="hover-info flex">
+                        <i class="fas fa-heart"></i><p>O grito (Munch)</p>
+                    </div>
+                </div>
+                <div class="card-pesquisa">
+                    <img src="../img/paintings/magritte-filho-do-homem.jpg" class="small_img">
+                    <div class="hover-info flex">
+                        <i class="fas fa-heart"></i><p>O filho do homem (Magritte)</p>
+                    </div>
+                </div>
             </div>
             <div class="pinturas-galeria flex">
-                <img src="../img/paintings/munch-amor-e-dor.jpg" alt="">
-                <img src="../img/paintings/vinci-monalisa.jpg" alt="">
-                <img src="../img/paintings/bellini-madonna-with-child.jpg" alt="">
-                <img src="../img/paintings/Klimt-beijo.jpg" alt="">
-                <img src="../img/paintings/bouguereau-aurora.jpg" alt="">
+                <div class="card-pesquisa">
+                    <img src="../img/paintings/munch-amor-e-dor.jpg" class="small_img">
+                    <div class="hover-info flex">
+                        <i class="fas fa-heart"></i><p>Amor e dor (Munch)</p>
+                    </div>
+                </div>
+                <div class="card-pesquisa">
+                    <img src="../img/paintings/vinci-monalisa.jpg" class="small_img">
+                    <div class="hover-info flex">
+                        <i class="fas fa-heart"></i><p>Monalisa (Da Vinci)</p>
+                    </div>
+                </div>
+                <div class="card-pesquisa">
+                    <img src="../img/paintings/bellini-madonna-with-child.jpg" class="small_img">
+                    <div class="hover-info flex">
+                        <i class="fas fa-heart"></i><p>Madonna with a child (Bellini)</p>
+                    </div>
+                </div>
+                <div class="card-pesquisa">
+                    <img src="../img/paintings/picasso-vieux.jpg" class="small_img">
+                    <div class="hover-info flex">
+                        <i class="fas fa-heart"></i><p>Velho guitarrista cego (Picasso)</p>
+                    </div>
+                </div>
+                <div class="card-pesquisa">
+                    <img src="../img/paintings/bouguereau-aurora.jpg" class="small_img">
+                    <div class="hover-info flex">
+                        <i class="fas fa-heart"></i><p>A Aurora (Bouguereau)</p>
+                    </div>
+                </div>
             </div>
             <div class="pinturas-galeria flex">
-                <img src="../img/paintings/duccio-maesta.jpg" alt="">
-                <img src="../img/paintings/gogh-noite-estrelado-sobre-rodano.jpg" alt="">
-                <img src="../img/paintings/munch-melancholy.jpg" alt="">
-                <img src="../img/paintings/picasso-jacqueline-com-flores.jpg" alt="">
-                <img src="../img/paintings/gogh-amendoeira-em-flor.jpg" alt="">
+                <div class="card-pesquisa">
+                    <img src="../img/paintings/duccio-maesta.jpg" class="small_img">
+                    <div class="hover-info flex">
+                        <i class="fas fa-heart"></i><p>Maesta (Duccio)</p>
+                    </div>
+                </div>
+                <div class="card-pesquisa">
+                    <img src="../img/paintings/gogh-noite-estrelado-sobre-rodano.jpg" class="small_img">
+                    <div class="hover-info flex">
+                        <i class="fas fa-heart"></i><p>A noite estrelada sobre ródano (Van Gogh)</p>
+                    </div>
+                </div>
+                <div class="card-pesquisa">
+                    <img src="../img/paintings/munch-melancholy.jpg" class="small_img">
+                    <div class="hover-info flex">
+                        <i class="fas fa-heart"></i><p>Melancholy (Munch)</p>
+                    </div>
+                </div>
+                <div class="card-pesquisa">
+                    <img src="../img/paintings/picasso-jacqueline-com-flores.jpg" class="small_img">
+                    <div class="hover-info flex">
+                        <i class="fas fa-heart"></i><p>Jacqueline com flores (Picasso)</p>
+                    </div>
+                </div>
+                <div class="card-pesquisa">
+                    <img src="../img/paintings/gogh-amendoeira-em-flor.jpg" class="small_img">
+                    <div class="hover-info flex">
+                        <i class="fas fa-heart"></i><p>Amendoeira em flor (Van Gogh)</p>
+                    </div>
+                </div>
             </div>
             <div class="pinturas-galeria flex">
-                <img src="../img/paintings/munch-kiss-by-the-window.jpg" alt="">
-                <img src="../img/paintings/da-forli-music-making-angel.jpg" alt="">
-                <img src="../img/paintings/dali-persistencia-da-memoria.jpg" alt="">
-                <img src="../img/paintings/grego-aquiles-ajax-jogando-damas.jpg" alt="">
-                <img src="../img/paintings/giotto-lamentation.jpg" alt="">
+                <div class="card-pesquisa">
+                    <img src="../img/paintings/munch-kiss-by-the-window.jpg" class="small_img">
+                    <div class="hover-info flex">
+                        <i class="fas fa-heart"></i><p>Kiss by the Window (Munch)</p>
+                    </div>
+                </div>
+                <div class="card-pesquisa">
+                    <img src="../img/paintings/da-forli-music-making-angel.jpg" class="small_img">
+                    <div class="hover-info flex">
+                        <i class="fas fa-heart"></i><p>Music making angel (Da Forli)</p>
+                    </div>
+                </div>
+                <div class="card-pesquisa">
+                    <img src="../img/paintings/dali-persistencia-da-memoria.jpg" class="small_img">
+                    <div class="hover-info flex">
+                        <i class="fas fa-heart"></i><p>Persistencia da memória (Dali)</p>
+                    </div>
+                </div>
+                <div class="card-pesquisa">
+                    <img src="../img/paintings/grego-aquiles-ajax-jogando-damas.jpg" class="small_img">
+                    <div class="hover-info flex">
+                        <i class="fas fa-heart"></i><p>Aquiles jogando ajax jogando damas (Arte na Grécia)</p>
+                    </div>
+                </div>
+                <div class="card-pesquisa">
+                    <img src="../img/paintings/giotto-lamentation.jpg" class="small_img">
+                    <div class="hover-info flex">
+                        <i class="fas fa-heart"></i><p>Lamentation (Giotto)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pinturas-galeria flex">
+                <div class="card-pesquisa">
+                    <img src="../img/paintings/michelangelo-criacao-adao.jpg" class="small_img">
+                    <div class="hover-info flex">
+                        <i class="fas fa-heart"></i><p>A criação de Adão (Michelangelo)</p>
+                    </div>
+                </div>
+                <div class="card-pesquisa">
+                    <img src="../img/paintings/monet-impressao.jpg" class="small_img">
+                    <div class="hover-info flex">
+                        <i class="fas fa-heart"></i><p>Impressão, nascer do sol (Monet)</p>
+                    </div>
+                </div>
+                <div class="card-pesquisa">
+                    <img src="../img/paintings/melozzo-da-forli-anjo.jpg" class="small_img">
+                    <div class="hover-info flex">
+                        <i class="fas fa-heart"></i><p>O Anjo (Da Forli)</p>
+                    </div>
+                </div>
+                <div class="card-pesquisa">
+                    <img src="../img/paintings/magritte-traicao-das-imagens.jpg" class="small_img">
+                    <div class="hover-info flex">
+                        <i class="fas fa-heart"></i><p>A traição das imagens (Magritte)</p>
+                    </div>
+                </div>
+                <div class="card-pesquisa">
+                    <img src="../img/paintings/magritte-les-amants.jpg" class="small_img">
+                    <div class="hover-info flex">
+                        <i class="fas fa-heart"></i><p>Os Amantes (Magritte)</p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -172,7 +311,7 @@
     <!-- MODAL LOGIN-->
     <div id="modal-login" class="modal-container flex">
         <div class="modal">
-            <button class="fechar">X</button>
+            <button class="fechar">&times;</button>
             <h2>Login</h2>
             <img src="../img/palette.png" alt="tela">
             <form>
@@ -190,7 +329,7 @@
     <!--MODAL CADASTRO-->
     <div id="modal-cadastro" class="modal-container flex">
         <div class="modal register">
-            <button class="fechar">X</button>
+            <button class="fechar">&times;</button>
             <h2>Faça parte da comunidade Colorful Art</h2>
             <img src="../img/tela.png" alt="paleta">
             <form>
@@ -207,6 +346,8 @@
             </form>
         </div>
     </div>
+
+    <!--MODAL GALERIA PINTURAS-->
 
     <script src="../js/modal.js"></script>
 </body>

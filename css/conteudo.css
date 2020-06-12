@@ -1,3 +1,5 @@
+/* MENU */
+
 .search-menu {
     display: inline-block;
     padding: 20px 10px;
@@ -16,20 +18,102 @@
     width: 30px;
     display: inline-block;
     margin-left: 15px;
+    cursor: pointer;
 }
 
 
-/*CONTEÚDO*/
+/* CONTEÚDO (PINTURAS) */
 
 main {
-    padding: 110px 0;
+    padding: 120px 0 100px;
 }
 
-.pinturas-galeria img{
+.card-pesquisa {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.small_img{
     width: 200px;
     height: 300px;
     object-fit: cover;
-    border-radius: 15px;
-    margin: 10px;
+    border-radius: 20px;
     cursor: zoom-in;
+    transition: all 0.5s;
+}
+
+.small_img:hover {
+    filter: brightness(70%);
+}
+
+.hover-info {
+    bottom: 3px;
+    width: 200px;
+    height: 40px;
+    border-radius: 0 0 20px 20px;
+    position: absolute;
+    padding-top: 5px;
+    margin: 10px;
+    color: #fff;
+    background-color: #0007;
+    box-shadow: 0px 0px 22px 15px #0007;
+    align-items: flex-start;
+    justify-content: right;
+    transition: 0.5s;
+}
+
+.hover-info p {
+    font-size: 12px;
+    display: inline-block;
+}
+
+.fa-heart {
+    font-size: 28px;
+    padding: 0 7px;
+    cursor: pointer;
+}
+/* MODAL CONTEUDO - PINTURAS */
+
+#modal_img {
+    height: 90vh;
+    transform: scale(0);
+    transition: all linear 0.3s;
+}
+
+.modal_active #modal_img {
+    transform: scale(1);
+}
+
+.modal-galeria {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000b;
+    position: fixed;
+    z-index: 50;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.8s linear, opacity 0.3s linear;
+}
+
+.modal-content {
+    height: 100vh;
+}
+
+#fechar_galeria {
+    top: 15px;
+    right: 25px;
+    color: #fff;
+    background-color: #000c;
+    border: 1px solid #fff;
+    font-size: 35px;
+    padding: 0 10px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.modal_active {
+    visibility: visible;
+    opacity: 1;
 }
