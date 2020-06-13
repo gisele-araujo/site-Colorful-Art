@@ -68,6 +68,10 @@
 
     <main>
         <!--BANNER PRINCIPAL SLIDESHOW-->
+        <!-- <div class="frase-principal container flex">
+            <q>A Arte diz o indizível, exprime o inexprimível, traduz o intraduzível.</q>
+            <span>Leonardo Da Vinci</span>
+        </div> -->
         <div class="galeria">
             <div class="imagens">
                 <img src="img/paintings/gogh-amendoeira-em-flor.jpg" alt="Amendoeira em Flor">
@@ -78,15 +82,94 @@
         </div>
 
         <!--QUIZ-->
-        <section class="apresentacao">
-            <div class="container flex page-quiz1">
-                <div class="texto" data-anime="left">
+        <section class="apresentacao" id="fundo_quiz">
+            <div class="container flex">
+                <div id="quadro_apr" class="texto" data-anime="left">
                     <img src="img/moldura.png" class="moldura">
                 </div>
                 <div>
-                    <h3 class="botao-quiz flex" data-anime="right">
-                        <a href="#">Começar o Quiz &#9658; </a>
+                    <h3 onclick="startQuiz()" id="iniciar_quiz" class="botao-quiz flex" data-anime="right">
+                        Começar o Quiz &#9658;
                     </h3>
+                </div>
+            </div>
+
+            <div class="container">
+                <div id="title_quiz">
+                    <h1 class="titulo-quiz flex">Qual movimento artístico tem mais a ver com sua personalidade?</h1>
+                    <hr>
+                </div>
+                
+                <div class="combo-questao" id="q1">
+                    <h2 class="pergunta">Qual dessas pinturas abaixo você gostaria de ter em casa?</h2>
+
+                    <div class="flex">
+                        <div onclick="op1_1()" class="opcao"><img src="img/paintings/botticelli-nascimento-venus.jpg">
+                        </div>
+                        <div onclick="op2_1()" class="opcao"><img src="img/paintings/munch-the-scream.jpg"></div>
+                    
+                        <div onclick="op3_1()" class="opcao"><img src="img/paintings/dali-persistencia-da-memoria.jpg">
+                        </div>
+                        <div onclick="op4_1()" class="opcao"><img src="img/paintings/warhol-portrait-of-maurice.jpg">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="combo-questao" id="q2">
+                    <h2 class="pergunta">Se você pudesse escolher, viveria no passado, futuro ou presente?</h2>
+
+                    <div class="flex">
+                        <div onclick="op1_2()" class="opcao">Passado</div>
+                        <div onclick="op2_2()" class="opcao">Presente</div>
+                    </div>
+                    <div class="flex">
+                        <div onclick="op3_2()" class="opcao">Não sei ao certo</div>
+                        <div onclick="op4_2()" class="opcao">Futuro</div>
+                    </div>
+                </div>
+
+                <div class="combo-questao" id="q3">
+                    <h2 class="pergunta">Escolha uma paleta de cores</h2>
+
+                    <div class="flex">
+                        <div onclick="op1_3()" class="opcao"><img src="img/cores1.png" style="height: 70px;"></div>
+                        <div onclick="op2_3()" class="opcao"><img src="img/cores4.png" style="height: 70px;"></div>
+                    </div>
+                    <div class="flex">
+                        <div onclick="op3_3()" class="opcao"><img src="img/cores2.png" style="height: 70px;"></div>
+                        <div onclick="op4_3()" class="opcao"><img src="img/cores3.png" style="height: 70px;"></div>
+                    </div>
+                </div>
+
+                <div class="combo-questao" id="q4">
+                    <h2 class="pergunta">Com que frequência você é incompreendido pelas pessoas?</h2>
+
+                    <div class="flex">
+                        <div onclick="op1_4()" class="opcao">Nunca</div>
+                        <div onclick="op2_4()" class="opcao">As vezes</div>
+                    </div>
+                    <div class="flex">
+                        <div onclick="op3_4()" class="opcao">Muito</div>
+                        <div onclick="op4_4()" class="opcao">Raramente</div>
+                    </div>
+                </div>
+
+                <div class="combo-questao" id="q5">
+                    <h2 class="pergunta">Qual seu maior desejo atualmente?</h2>
+                    <div class="flex">
+                        <div onclick="op1_5()" class="opcao">Ajudar os outros e o planeta</div>
+                        <div onclick="op2_5()" class="opcao">Viver a vida intensamente</div>
+                    </div>
+                    <div class="flex">
+                        <div onclick="op3_5()" class="opcao">Adquirir mais conhecimento</div>
+                        <div onclick="op4_5()" class="opcao">Enriquecer</div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex">
+                        <div id="result"></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -224,6 +307,12 @@
         </section>
     </main>
 
+    <!--FRASE-->
+    <div class="frase">
+        <q>A Arte diz o indizível, exprime o inexprimível, traduz o intraduzível.</q>
+        <span>Leonardo da Vinci</span>
+    </div>
+
     <!--RODAPÉ-->
     <footer>
         <div class="rodape">
@@ -233,16 +322,19 @@
                         <h4>Obras</h4>
                         <ul>
                             <li>
-                                <a href="">Clássica</a>
+                                <a href="html/conteudo.html">Pintura</a>
                             </li>
                             <li>
-                                <a href="">Medieval</a>
+                                <a href="">Escultura</a>
                             </li>
                             <li>
-                                <a href="">Moderna</a>
+                                <a href="">Desenho</a>
                             </li>
                             <li>
-                                <a href="">Contemporânea</a>
+                                <a href="">Gravura</a>
+                            </li>
+                            <li>
+                                <a href="">Artesanato</a>
                             </li>
                         </ul>
                     </div>
@@ -363,10 +455,10 @@
             </form>
         </div>
     </div>
-    
+
 
     <script>
-        // SCRIPT EFEITO [DATA-ANIME] DA SESSÃO APRESENTAÇÃO
+        // SCRIPT EFEITO [DATA-ANIME] DA SESSÃO APRESENTAÇÃO, COM UM DELAY MAIOR PARA  SE ADAPTAR MELHOR A PÁGINA.
 
         const target = document.querySelectorAll('[data-anime]');
 
@@ -387,6 +479,7 @@
     </script>
     <script src="js/modal.js"></script>
     <script src="js/carrossel.js"></script>
+    <script src="js/quiz.js"></script>
 
 </body>
 

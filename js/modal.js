@@ -1,4 +1,4 @@
-// estrutura MODAL 
+// MODAL DE AUTENTICAÇÃO 
 
 function iniciaModal(modalID) {
 
@@ -99,9 +99,7 @@ for (let i = 0; i < imagens_gallery.length; i++){
         modalImg.setAttribute('src', srcVal);
         modal_gallery.classList.toggle('modal_active');
     });
-    
 }
-
 
 btClose.addEventListener('click', function(){
     modal_gallery.classList.toggle('modal_active');

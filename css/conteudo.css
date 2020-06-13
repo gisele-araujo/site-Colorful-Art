@@ -113,6 +113,10 @@ main {
     cursor: pointer;
 }
 
+#fechar_galeria:hover {
+    background-color: #daa520;
+}
+
 .modal_active {
     visibility: visible;
     opacity: 1;
