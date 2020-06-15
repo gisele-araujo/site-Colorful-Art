@@ -145,19 +145,20 @@ let movimento = {
 
     function resultado() {
 
+
         if (movimento.renascimento > movimento.expressionismo && movimento.renascimento > movimento.surrealismo && movimento.renascimento > movimento.popart) {
-            result.innerHTML = `RENASCIMENTO ${movimento.renascimento}`;
+            result1.style.display = 'block';
         }
         else if (movimento.expressionismo > movimento.renascimento && movimento.expressionismo > movimento.surrealismo && movimento.expressionismo > movimento.popart) {
-            result.innerHTML = `EXPRESSIONISMO ${movimento.expressionismo}`;
+            result2.style.display = 'block';
         }
         else if (movimento.surrealismo > movimento.renascimento && movimento.surrealismo > movimento.expressionismo && movimento.surrealismo > movimento.popart) {
-            result.innerHTML = `SURREALISMO ${movimento.surrealismo}`;
+            result3.style.display = 'block';
         }
         else if (movimento.popart > movimento.renascimento && movimento.popart > movimento.expressionismo && movimento.popart > movimento.surrealismo){
-            result.innerHTML = `POP ART ${movimento.popart}`;
+            result4.style.display = 'block';
         } else {
-            result.innerHTML = `empate!`;
+            result5.style.display = 'block';
         }
 
     }

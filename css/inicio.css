@@ -166,6 +166,33 @@
     transform: scale(1.1);
 }
 
+/*RESULTADO DO QUIZ*/
+
+.resultado-quiz {
+    display: none;
+}
+
+.title-result-quiz {
+    text-align: center;
+    margin: 30px;
+}
+
+.image-result-quiz img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border: 8px double #daa520;
+}
+
+.text-result-quiz {
+    width: 289px;
+    margin: 50px;
+    padding: 50px;
+    text-align: center;
+    color: rgb(37, 37, 37);
+    background-image: url(../img/stain.png);
+    background-size: cover;
+}
 
 /*ARTISTAS E OBRAS*/
 
