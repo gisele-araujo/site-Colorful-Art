@@ -99,7 +99,7 @@
                     <h1 class="titulo-quiz flex">Qual movimento artístico tem mais a ver com sua personalidade?</h1>
                     <hr>
                 </div>
-                
+
                 <div class="combo-questao" id="q1">
                     <h2 class="pergunta">Qual dessas pinturas abaixo você gostaria de ter em casa?</h2>
 
@@ -107,7 +107,7 @@
                         <div onclick="op1_1()" class="opcao"><img src="img/paintings/botticelli-nascimento-venus.jpg">
                         </div>
                         <div onclick="op2_1()" class="opcao"><img src="img/paintings/munch-the-scream.jpg"></div>
-                    
+
                         <div onclick="op3_1()" class="opcao"><img src="img/paintings/dali-persistencia-da-memoria.jpg">
                         </div>
                         <div onclick="op4_1()" class="opcao"><img src="img/paintings/warhol-portrait-of-maurice.jpg">
@@ -432,13 +432,22 @@
 
     <!--MODAL CADASTRO-->
     <div id="modal-cadastro" class="modal-container flex">
-        <div class="modal register">
+
+        <div class="modal register flex">
             <button class="fechar">&times;</button>
-            <h2>Faça parte da comunidade Colorful Art</h2>
-            <img src="img/tela.png" alt="paleta">
+
+            <div class="img-cadastro">
+                <img src="img/grito-editada.png" alt="">
+            </div>
+
             <form>
-                <input type="text" class="input" placeholder="Seu nome" id="valida_nome">
-                <div class="border-input"></div>
+                <h2>Faça parte da comunidade Colorful Art</h2>
+                <img src="img/tela.png" alt="paleta">
+
+                <ul id="mensagem_erro" class="error"></ul>
+
+                <input type="text" class="input" placeholder="Seu nome" id="valida_nome" onkeyup="validacao_nome()">
+                <div class="border-input" id="mensagem_nome"></div>
 
                 <input type="email" class="input" placeholder="Seu e-mail" id="valida_email"
                     onkeyup="validacao_email()">
@@ -446,14 +455,16 @@
 
                 <input type="password" class="input" placeholder="Crie uma senha" id="valida_senha"
                     onkeyup="validacao_senha()">
-                <div class="border-input" id="mensagem_senha1"></div>
+                <div class="border-input" id="mensagem_senha"></div>
 
                 <input type="password" class="input" placeholder="Confirmar senha" id="confirma_senha">
-                <div class="border-input" id="mensagem_senha2"></div>
+                <div class="border-input"></div>
 
-                <button class="enter" onclick="cadastrar()">CADASTRAR-SE</button>
+                <button type="submit" class="enter" onclick="cadastrar()">CADASTRAR-SE</button>
             </form>
         </div>
+    </div>
+
     </div>
 
 
@@ -478,6 +489,7 @@
         }
     </script>
     <script src="js/modal.js"></script>
+    <script src="js/validacao_form.js"></script>
     <script src="js/carrossel.js"></script>
     <script src="js/quiz.js"></script>
 

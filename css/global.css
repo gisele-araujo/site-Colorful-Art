@@ -15,6 +15,14 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 h1 {
     font-size: 38px; /* PARA TÍTULOS */
 }
@@ -49,7 +57,6 @@ p {
     color: #f7f7eb;
     background-color: #0387ca;
     font-size: 16px;
-    text-decoration: none;
     border-radius: 50px;
     width: 200px;
     padding: 15px;
@@ -126,10 +133,6 @@ header {
     border-bottom: 3px solid #DAA520;
 }
 
-.menu a {
-    text-decoration: none;
-}
-
 .autenticacao {
     float: right;
     padding: 20px;
@@ -187,7 +190,6 @@ header {
 .sub-menu li {
     padding: 15px;
     border-bottom: 1px solid #138af0;
-    list-style: none;
     font-size: 14px;
 }
 
@@ -231,12 +233,7 @@ header {
     font-size: 16px;
 }
 
-.rodape li {
-    list-style: none;
-}
-
 .rodape a {
-    text-decoration: none;
     color: rgb(70, 70, 70);
     cursor: pointer;
 }
@@ -298,13 +295,11 @@ header {
 }
 
 .modal {
-    box-sizing: border-box;
     overflow: hidden;
     text-align: center;
     background-color: #fff;
-    width: 30%;
-    height: 65%;
-    padding: 3% 4%;
+    width: 23%;
+    padding: 4%;
     border: 5px double #DAA520;
     box-shadow: 0 0 0 10px white;
     border-radius: 8px;
@@ -327,12 +322,18 @@ header {
 }
 
 .modal.register {
-    height: 74%;
+    height: 70%;
+    width: 52%;
 }
 
 .modal img {
     width: 75px;
     margin: 15px 0;
+}
+
+.img-cadastro img{
+    width: 330px;
+    margin-right: 40px;
 }
 
 .modal span {
@@ -406,6 +407,15 @@ header {
 
 .enter.face:hover{
     background-color: #049eeb;
+}
+
+.error li{
+    background-color: #FFE4E1;
+    color: #B22222;
+    border-radius: 5px;
+    padding: 3px;
+    margin: 3px;
+    font-size: 15px;
 }
 
 

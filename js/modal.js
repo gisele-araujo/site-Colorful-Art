@@ -1,4 +1,4 @@
-// MODAL DE AUTENTICAÇÃO 
+// MODAL DE AUTENTICAÇÃO-----------------------------------------------
 
 function iniciaModal(modalID) {
 
@@ -33,58 +33,7 @@ cadastrar_rodape.addEventListener('click', function () {
 
 
 
-// validação do formulário
-
-function validacao_email() {
-    let email = valida_email.value.trim();
-
-    document.getElementById('mensagem_email').innerHTML = '';
-
-    for (let contadorE = 0; contadorE <= email.length - 1; contadorE++) {
-
-        if (email.indexOf('@') >= 0 && email.indexOf('.') >= 0) {
-            document.getElementById('mensagem_email').innerHTML = '<b style="color: #008000; background-color: #cff7cf; display: block;"> Email OK! </b>';
-        } else {
-            document.getElementById('mensagem_email').innerHTML = '<b style="background-color: #FAFAD2; display: block">Por favor, digite um email válido. </b>';
-        }
-
-    }
-}
-
-function validacao_senha() {
-    let senha = valida_senha.value.trim();
-
-    document.getElementById('mensagem_senha1').innerHTML = '';
-
-    for (let contadorS = 0; contadorS <= senha.length - 1; contadorS++) {
-
-        if (senha.length >= 8) {
-            document.getElementById('mensagem_senha1').innerHTML = '<b style="color: #008000; background-color: #cff7cf; display: block;"> Senha OK! </b>';
-        } else {
-            document.getElementById('mensagem_senha1').innerHTML = '<b style="background-color: #FAFAD2; display: block"> Sua senha deve ter pelo menos 8 caracteres </b>'
-        }
-    }
-}
-
-function cadastrar() {
-    let senha_valida = valida_senha.value.trim() == confirma_senha.value.trim();
-    let nao_preenchidos = valida_senha.value.trim() == '' || confirma_senha.value.trim() == '' || valida_email.value.trim() == '' || valida_nome.value.trim() == '';
-
-    document.getElementById('mensagem_senha2').innerHTML = '';
-
-    if (!senha_valida) {
-        document.getElementById('mensagem_senha2').innerHTML = '<b style="color: #8B0000; background-color: #f9e1d9; display: block;"> Senhas não coincidem </b>';
-        confirma_senha.value = '';
-        event.preventDefault()
-    }
-
-    if (nao_preenchidos) {
-        alert ('Por favor, preencha todos os campos corretamente');
-        event.preventDefault()
-    }
-    
-}
- // MODAL DE PINTURAS
+ // MODAL DE PINTURAS-----------------------------------------------
  
 let imagens_gallery= document.querySelectorAll('.small_img');
 let modal_gallery = document.querySelector('.modal-galeria');
