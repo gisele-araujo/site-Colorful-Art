@@ -14,13 +14,13 @@ function validacao_nome() {
 }
 
 function validacao_email() {
-    let email = valida_email.value.trim();
+    let email = valida_email.value;
 
     document.getElementById('mensagem_email').innerHTML = '';
 
     for (let i = 0; i <= email.length - 1; i++) {
 
-        if (email.indexOf('@') >= 0 && email.indexOf('.') >= 0) {
+        if (email.indexOf('@') >= 0 && email.indexOf('.') >= 0 && email.indexOf(' ') == -1) {
             document.getElementById('mensagem_email').innerHTML = '<b style="color: #008000; background-color: #cff7cf; display: block;"> Email OK! </b>';
         } else {
             document.getElementById('mensagem_email').innerHTML = '<b style="background-color: #FAFAD2; display: block">Digite um email válido. </b>';
@@ -30,7 +30,7 @@ function validacao_email() {
 }
 
 function validacao_senha() {
-    let senha = valida_senha.value.trim();
+    let senha = valida_senha.value;
 
     document.getElementById('mensagem_senha').innerHTML = '';
 
@@ -49,12 +49,12 @@ function validacao_senha() {
 function validacao() {
     let erros = []; // vetor que poderá ser preenchido com if's verdadeiros a partir do push.
 
-    let senha_valida = valida_senha.value.trim() == confirma_senha.value.trim();
+    let senha_valida = valida_senha.value == confirma_senha.value;
     let nao_preenchidos = valida_senha.value.trim() == '' || confirma_senha.value.trim() == '' || valida_email.value.trim() == '' || valida_nome.value.trim() == '';
 
 
     if (nao_preenchidos) {
-        erros.push("Por favor, preencha todos os campos corretamente");
+        erros.push("Por favor, preencha todos os campos corretamente conforme orientações");
         event.preventDefault()
     }
 
