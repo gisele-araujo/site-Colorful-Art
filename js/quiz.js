@@ -120,31 +120,38 @@ let movimento = {
     function op1_5() {
         movimento.renascimento++;
         q5.style.display = 'none';
-        resultado();
+        carregando();
     }
 
     function op2_5() {
         movimento.expressionismo++;
         q5.style.display = 'none';
-        resultado();
+        carregando();
     }
 
     function op3_5() {
         movimento.surrealismo++;
         q5.style.display = 'none';
-        resultado();
+        carregando();
     }
 
     function op4_5() {
         movimento.popart++;
         q5.style.display = 'none';
-        resultado();
+        carregando();
     }
 
     // ------------------------RESULTADO DO QUIZ: PONTUAÇÃO MAIOR------------------------------
 
-    function resultado() {
+    function carregando() {
+        loading.style.display = 'block';
 
+        setTimeout(resultado, 2500);
+    }
+
+    
+    function resultado() {
+        loading.style.display = 'none';
 
         if (movimento.renascimento > movimento.expressionismo && movimento.renascimento > movimento.surrealismo && movimento.renascimento > movimento.popart) {
             result1.style.display = 'block';

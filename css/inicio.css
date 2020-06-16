@@ -148,6 +148,7 @@
     margin: 20px;
     padding: 20px;
     border: 2px solid #daa520;
+    border-radius: 5px;
     width: 240px;
     box-sizing: border-box;
     cursor: pointer;
@@ -167,6 +168,11 @@
 }
 
 /*RESULTADO DO QUIZ*/
+
+#loading {
+    display: none;
+    margin-top: 150px;
+}
 
 .resultado-quiz {
     display: none;
