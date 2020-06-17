@@ -510,7 +510,7 @@
 
                 <input type="checkbox"><span>Lembrar identificação do usuário</span>
 
-                <button class="enter">ENTRAR</button>
+                <button class="enter" onclick="logar()">ENTRAR</button>
                 <button class="enter face">ENTRAR COM O FACEBOOK</button>
             </form>
         </div>
@@ -526,7 +526,7 @@
                 <img src="img/grito-editada.png" alt="">
             </div>
 
-            <form>
+            <form action="http://localhost:3333/users" method="POST" id='form_cad'>
                 <h2>Faça parte da comunidade Colorful Art</h2>
                 <img src="img/tela.png" alt="paleta">
 
@@ -546,7 +546,7 @@
                 <input type="password" class="input" placeholder="Confirmar senha" id="confirma_senha">
                 <div class="border-input"></div>
 
-                <button type="submit" class="enter" onclick="cadastrar()">CADASTRAR-SE</button>
+                <button type="submit" class="enter">CADASTRAR-SE</button>
             </form>
         </div>
     </div>

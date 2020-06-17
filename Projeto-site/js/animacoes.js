@@ -1,3 +1,5 @@
+// Este arquivo está linkado com as páginas de obras, artistas e conteúdo.
+
 // EFEITO SCROLL NOS ELEMENTOS
 
 const target = document.querySelectorAll('[data-anime]');
