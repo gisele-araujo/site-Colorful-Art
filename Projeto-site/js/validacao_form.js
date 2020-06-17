@@ -65,12 +65,42 @@ function validacao() {
     return erros;
 }
 
+function logar() {
+
+    let ajax = new XMLHttpRequest();
+
+    //abre conexao com a nossa rota de get
+    ajax.open("GET", "http://localhost:3333/users");
+
+    //verifica se a nossa rota devolveu uma resposta
+    ajax.onreadystatechange = function () {
+        if (ajax.status == 200 && ajax.readyState == 4) {
+
+            alert('funcionou!');
+
+            //pega o texto da nossa resposta (response) que vem da rota
+            let usuarios = JSON.parse(ajax.responseText);
+
+            //Dá pra pegar dados de um usuario especifico, passando uma posicao para nossa variavel
+            //e um atributo do nosso json. Como o email abaixo
+            let email_cadastrado = usuarios[0].email;
+        } 
+    }
+
+    //Para a conexao funcionar, temos que colocar o ajax.send, porem como a rota é de get, não enviamos nada
+    ajax.send();
+}
+
 
 function cadastrar(event) {
     event.preventDefault();
 
     var erros = validacao();
     mensagem_erro.innerHTML = ``;
+
+    let name = valida_nome.value;
+    let email_user = valida_email.value;
+    let password = valida_senha.value;
 
     if (erros.length > 0) {
 
@@ -88,44 +118,18 @@ function cadastrar(event) {
 
         // CÓDIGO PARA ENVIO DE INFORMAÇÕES AO BANCO DE DADOS
 
-        let name = valida_nome.value;
-        let email_user = valida_email.value;
-        let password = valida_senha.value;
 
         //criando uma variavel para os parametros que serao enviados
-        let params = "Nome=" + name + "&Email=" + email_user + "&Senha=" + password;
+        let params = "nome=" + name + "&email=" + email_user + "&senha=" + password;
 
         //abrindo a conexão com a rota
         let ajax = new XMLHttpRequest();
         ajax.open("POST", "http://localhost:3333/users");
         ajax.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-        ajax.send(params); 
-
-        //adiciona um evento no nosso form, sem precisar de um onsubmit no form
-        form_cad.addEventListener("submit", cadastrar);
+        ajax.send(params);
     }
 }
 
-function logar() {
+//adiciona um evento no nosso form, sem precisar de um onsubmit no form
+form_cad.addEventListener("submit", cadastrar);
 
-    let ajax = new XMLHttpRequest();
-
-    //abre conexao com a nossa rota de get
-    ajax.open("GET", "http://localhost:3333/users");
-
-    //verifica se a nossa rota devolveu uma resposta
-    ajax.onreadystatechange = function() {
-        if(ajax.status == 200 && ajax.readyState == 4) {
-
-            //pega o texto da nossa resposta (response) que vem da rota
-            let usuarios = JSON.parse(ajax.responseText);
-            
-            //Dá pra pegar dados de um usuario especifico, passando uma posicao para nossa variavel
-            //e um atributo do nosso json. Como o email abaixo
-            let email_cadastrado = usuarios[0].email;
-        }
-    }
-
-    //Para a conexao funcionar, temos que colocar o ajax.send, porem como a rota é de get, não enviamos nada
-    ajax.send();
-}

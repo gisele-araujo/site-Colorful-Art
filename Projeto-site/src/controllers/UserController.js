@@ -9,11 +9,12 @@ module.exports = {
     },
 
     async create(request, response) {
-        const { name, email, pass } = request.body;
+        const { nome, email, senha } = request.body;
+        let data = new Date();
 
-        sql = 'INSERT INTO Cadastro (Nome, Email, Senha) VALUES (?, ?, ?)';
+        sql = 'INSERT INTO Cadastro (Nome, Email, Senha, DataCadastro) VALUES (?, ?, ?, ?)';
 
-        connection.query(sql, [name, email, pass], function (error, result) {
+        connection.query(sql, [nome, email, senha, data], function (error, result) {
             if (error) throw error;
             response.send(result);
         });
