@@ -501,16 +501,16 @@
             <button class="fechar">&times;</button>
             <h2>Login</h2>
             <img src="img/palette.png" alt="tela">
-            <form>
-                <input type="email" class="input" placeholder="E-mail">
+            <form id="formulario_login">
+                <input type="email" class="input" placeholder="E-mail" id="login_email">
                 <div class="border-input"></div>
 
-                <input type="password" class="input" placeholder="Senha">
+                <input type="password" class="input" placeholder="Senha" id="login_senha">
                 <div class="border-input"></div>
 
                 <input type="checkbox"><span>Lembrar identificação do usuário</span>
 
-                <button class="enter" onclick="logar()">ENTRAR</button>
+                <button type="submit" class="enter">ENTRAR</button>
                 <button class="enter face">ENTRAR COM O FACEBOOK</button>
             </form>
         </div>
@@ -526,7 +526,7 @@
                 <img src="img/grito-editada.png" alt="">
             </div>
 
-            <form action="http://localhost:3333/users" method="POST" id='form_cad'>
+            <form action="http://localhost:3333/users" method="POST" id='formulario_cad'>
                 <h2>Faça parte da comunidade Colorful Art</h2>
                 <img src="img/tela.png" alt="paleta">
 
