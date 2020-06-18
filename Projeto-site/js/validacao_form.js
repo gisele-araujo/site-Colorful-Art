@@ -88,10 +88,10 @@ function logar(event) {
                     nome_cadastrado = usuarios[i].Nome;
 
                     window.location.href = 'conteudo.html';
-                    alert(`Olá, ${nome_cadastrado}`);  
+                    sessionStorage.nomeUsuario = nome_cadastrado; 
                 }
             }
-
+            
             if (nome_cadastrado == '') {
                 alert('Usuario não encontrado')
             }

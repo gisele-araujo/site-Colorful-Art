@@ -15,7 +15,7 @@
     <link rel="shortcut icon" href="img/palette.png">
 </head>
 
-<body>
+<body onclick="galeria()">
     <div class="modal-galeria">
         <div class="modal-content flex">
             <img src="img/paintings/tarsila-do-amaral.jpg" id="modal_img">
@@ -40,14 +40,9 @@
                         <input type="text" placeholder="Buscar pintura, escultura, artista...">
                     </div>
                 </div>
-                <nav class="links autenticacao" id="aut_1">
-                    <li>
-                        <a class="botao" id="login_acesso">Login</a>
-                    </li>
-                    <li>
-                        <a class="botao destaque" id="cadastrar_acesso">Cadastre-se</a>
-                    </li>
-                </nav>
+                <div>
+                    Olá, <span id="nome_logado"></span>
+                </div>
             </div>
         </div>
     </header>
@@ -397,7 +392,6 @@
         </div>
     </div>
 
-    <!--MODAL GALERIA PINTURAS-->
 
     <script src="js/modal.js"></script>
     <script src="js/validacao_form.js"></script>
@@ -406,3 +400,9 @@
 </body>
 
 </html>
+<script>
+    
+    let nome= sessionStorage.nomeUsuario;
+    document.getElementById('nome_logado').innerHTML = nome;
+
+</script>

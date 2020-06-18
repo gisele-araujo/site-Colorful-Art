@@ -33,23 +33,25 @@ cadastrar_rodape.addEventListener('click', function () {
 
 
 
- // MODAL DE PINTURAS-----------------------------------------------
- 
-let imagens_gallery= document.querySelectorAll('.small_img');
-let modal_gallery = document.querySelector('.modal-galeria');
-let modalImg = document.querySelector('#modal_img');
-let btClose = document.querySelector('#fechar_galeria');
-let srcVal="";
+// MODAL DE PINTURAS-----------------------------------------------
 
-for (let i = 0; i < imagens_gallery.length; i++){
-    imagens_gallery[i].addEventListener('click',function(){
-        
-        srcVal = imagens_gallery[i].getAttribute('src');
-        modalImg.setAttribute('src', srcVal);
+function galeria() {
+    let imagens_gallery = document.querySelectorAll('.small_img');
+    let modal_gallery = document.querySelector('.modal-galeria');
+    let modalImg = document.querySelector('#modal_img');
+    let btClose = document.querySelector('#fechar_galeria');
+    let srcVal = "";
+
+    for (let i = 0; i < imagens_gallery.length; i++) {
+        imagens_gallery[i].addEventListener('click', function () {
+
+            srcVal = imagens_gallery[i].getAttribute('src');
+            modalImg.setAttribute('src', srcVal);
+            modal_gallery.classList.toggle('modal_active');
+        });
+    }
+
+    btClose.addEventListener('click', function () {
         modal_gallery.classList.toggle('modal_active');
     });
 }
-
-btClose.addEventListener('click', function(){
-    modal_gallery.classList.toggle('modal_active');
-});
