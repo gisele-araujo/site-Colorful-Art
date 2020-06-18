@@ -73,7 +73,17 @@ main {
     font-size: 28px;
     padding: 0 7px;
     cursor: pointer;
+    transition: all 0.3s;
 }
+
+.fa-heart:hover {
+    transform: scale(1.3);
+}
+
+.favorito {
+    color: rgb(232, 0, 0);
+}
+
 /* MODAL CONTEUDO - PINTURAS */
 
 #modal_img {

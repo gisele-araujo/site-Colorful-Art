@@ -66,7 +66,6 @@ function validacao() {
 }
 
 function logar() {
-
     let ajax = new XMLHttpRequest();
 
     //abre conexao com a nossa rota de get
@@ -76,20 +75,21 @@ function logar() {
     ajax.onreadystatechange = function () {
         if (ajax.status == 200 && ajax.readyState == 4) {
 
-            alert('funcionou!');
-
             //pega o texto da nossa resposta (response) que vem da rota
             let usuarios = JSON.parse(ajax.responseText);
 
             //Dá pra pegar dados de um usuario especifico, passando uma posicao para nossa variavel
             //e um atributo do nosso json. Como o email abaixo
             let email_cadastrado = usuarios[0].email;
+
+            alert('funcionou!');
         } 
     }
 
     //Para a conexao funcionar, temos que colocar o ajax.send, porem como a rota é de get, não enviamos nada
     ajax.send();
 }
+
 
 
 function cadastrar(event) {

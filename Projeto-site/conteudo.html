@@ -52,11 +52,8 @@
         </div>
     </header>
     <main>
-        <div data-anime="left">
-            <!-- <div class="titulo-galeria container">
-                <h2>Pinturas</h2>
-                <hr>
-            </div> -->
+        <div data-anime="left" onclick="heart()">
+            
             <div class="pinturas-galeria flex">
                 <div class="card-pesquisa">
                     <img src="img/paintings/botticelli-nascimento-venus.jpg" class="small_img">
@@ -375,7 +372,7 @@
                 <img src="img/grito-editada.png" alt="">
             </div>
 
-            <form>
+            <form action="http://localhost:3333/users" method="POST" id='form_cad'>
                 <h2>Faça parte da comunidade Colorful Art</h2>
                 <img src="img/tela.png" alt="paleta">
 
@@ -395,7 +392,7 @@
                 <input type="password" class="input" placeholder="Confirmar senha" id="confirma_senha">
                 <div class="border-input"></div>
 
-                <button type="submit" class="enter" onclick="cadastrar()">CADASTRAR-SE</button>
+                <button type="submit" class="enter">CADASTRAR-SE</button>
             </form>
         </div>
     </div>
@@ -405,6 +402,7 @@
     <script src="js/modal.js"></script>
     <script src="js/validacao_form.js"></script>
     <script src="js/animacoes.js"></script>
+    <script src="js/favoritar.js"></script>
 </body>
 
 </html>
