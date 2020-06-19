@@ -27,18 +27,6 @@
                         <img src="img/brush.png" alt="">
                     </div>
 
-                    <!--mini menu-->
-                    <div class="menu-mini">
-                        <img src="img/menu.png" alt="">
-                        <ul class="sub-menu flex">
-                            <li><a href="index.html">Início</a></li>
-                            <li><a href="obras.html">Obras</a></li>
-                            <li><a href="artistas.html">Artistas</a></li>
-                            <li><a href="#">Fazer Login</a></li>
-                            <li><a href="#">Criar uma conta</a></li>
-                        </ul>
-                    </div>
-
                     <nav class="links navegacao">
                         <ul>
                             <li>
@@ -64,6 +52,20 @@
                     <div class="nome-logado">
                         Olá, <span id="nome_logado"></span>
                     </div>
+
+                    
+                    <!--mini menu-->
+                    <div class="menu-mini">
+                        <img src="img/menu.png">
+                        <ul class="sub-menu flex">
+                            <li><a href="index.html">Início</a></li>
+                            <li><a href="obras.html">Obras</a></li>
+                            <li><a href="artistas.html">Artistas</a></li>
+                            <li><a href="#">Fazer Login</a></li>
+                            <li><a href="#">Criar uma conta</a></li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -526,14 +528,14 @@
             <button class="fechar">&times;</button>
 
             <div class="img-cadastro">
-                <img src="img/grito-editada.png" alt="">
+                <img src="img/grito-editada.png">
             </div>
 
             <form action="http://localhost:3333/users" method="POST" id='formulario_cad'>
                 <h2>Faça parte da comunidade Colorful Art</h2>
                 <img src="img/tela.png" alt="paleta">
 
-                <ul id="mensagem_erro" class="error"></ul>
+                <div id="mensagem_erro" class="error"></div>
 
                 <input type="text" class="input" placeholder="Seu nome" id="valida_nome" onkeyup="validacao_nome()">
                 <div class="border-input" id="mensagem_nome"></div>
@@ -551,41 +553,16 @@
 
                 <button type="submit" class="enter">CADASTRAR-SE</button>
             </form>
+
+            <div class="cadastro-sucesso" id="sucesso">
+                <h2>Cadastrado com sucesso! Agora é só fazer login e usufruir da arte :)</h2>
+            </div>    
         </div>
     </div>
 
-
-
-    <script>
-        // SCRIPT EFEITO [DATA-ANIME] DA SESSÃO APRESENTAÇÃO, COM UM DELAY MAIOR PARA SE ADAPTAR MELHOR A PÁGINA.
-
-        const target = document.querySelectorAll('[data-anime]');
-
-        function animeScroll() {
-            const windowTop = window.pageYOffset - 150;
-            target.forEach(function (element) {
-                if (windowTop > element.offsetTop) {
-                    element.classList.add('animate');
-                }
-            })
-        }
-        animeScroll()
-        if (target.length) {
-            window.addEventListener('scroll', function () {
-                animeScroll();
-            });
-        }
-
-        let esconde = sessionStorage.mudaMenu;
-        let aparece = sessionStorage.mudaMenuLogin;
-        let nome= sessionStorage.nomeUsuario;
-        document.getElementById('nome_logado').innerHTML = nome;
-        autent.style.display = esconde;
-        document.querySelector('.nome-logado').style.display = aparece;
-
-    </script>
+    <script src="js/funcional-index.js"></script>
     <script src="js/modal.js"></script>
-    <script src="js/validacao_form.js"></script>
+    <script src="js/form.js"></script>
     <script src="js/carrossel.js"></script>
     <script src="js/quiz.js"></script>
 

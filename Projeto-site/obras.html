@@ -25,16 +25,7 @@
                     </a>
                     <img src="img/brush.png" alt="">
                 </div>
-                <div class="menu-mini">
-                    <img src="img/menu.png" alt="">
-                    <ul class="sub-menu flex">
-                        <li><a href="index.html">Início</a></li>
-                        <li><a href="obras.html">Obras</a></li>
-                        <li><a href="artistas.html">Artistas</a></li>
-                        <li>Fazer Login</li>
-                        <li>Criar uma conta</li>
-                    </ul>
-                </div>
+                
                 <nav class="links navegacao">
                     <ul>
                         <li>
@@ -59,6 +50,17 @@
                 </nav>
                 <div class="nome-logado">
                     Olá, <span id="nome_logado"></span>
+                </div>
+
+                <div class="menu-mini">
+                    <img src="img/menu.png" alt="">
+                    <ul class="sub-menu flex">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="obras.html">Obras</a></li>
+                        <li><a href="artistas.html">Artistas</a></li>
+                        <li>Fazer Login</li>
+                        <li>Criar uma conta</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -258,13 +260,16 @@
             <button class="fechar">&times;</button>
             <h2>Login</h2>
             <img src="img/palette.png" alt="tela">
-            <form>
-                <input type="text" class="input" placeholder="E-mail">
+            <form id="formulario_login">
+                <input type="text" class="input" placeholder="E-mail" id="login_email">
                 <div class="border-input"></div>
-                <input type="password" class="input" placeholder="Senha">
+
+                <input type="password" class="input" placeholder="Senha" id="login_senha">
                 <div class="border-input"></div>
+
                 <input type="checkbox"><span>Lembrar identificação do usuário</span>
-                <button class="enter">ENTRAR</button>
+
+                <button type="submit" class="enter">ENTRAR</button>
                 <button class="enter face">ENTRAR COM O FACEBOOK</button>
             </form>
         </div>
@@ -280,7 +285,7 @@
                 <img src="img/grito-editada.png" alt="">
             </div>
 
-            <form action="http://localhost:3333/users" method="POST" id='form_cad'>
+            <form action="http://localhost:3333/users" method="POST" id='formulario_cad'>
                 <h2>Faça parte da comunidade Colorful Art</h2>
                 <img src="img/tela.png" alt="paleta">
 
@@ -302,22 +307,31 @@
 
                 <button type="submit" class="enter">CADASTRAR-SE</button>
             </form>
+
+            <div class="cadastro-sucesso" id="sucesso">
+                <h2>Cadastrado com sucesso! Agora é só fazer login e usufruir da arte :)</h2>
+            </div>
         </div>
     </div>
 
+    <script>
+
+        // ALTERAÇÃO DO MENU AO FAZER LOGIN
+
+        let esconde = sessionStorage.mudaMenu;
+        let aparece = sessionStorage.mudaMenuLogin;
+        let nome = sessionStorage.nomeUsuario;
+        document.getElementById('nome_logado').innerHTML = nome;
+        autent.style.display = esconde;
+        document.querySelector('.nome-logado').style.display = aparece;
+
+    </script>
+
+
     <script src="js/modal.js"></script>
-    <script src="js/validacao_form.js"></script>
+    <script src="js/form.js"></script>
     <script src="js/animacoes.js"></script>
 
 </body>
 
 </html>
-<script>
-    let esconde = sessionStorage.mudaMenu;
-        let aparece = sessionStorage.mudaMenuLogin;
-        let nome= sessionStorage.nomeUsuario;
-        document.getElementById('nome_logado').innerHTML = nome;
-        autent.style.display = esconde;
-        document.querySelector('.nome-logado').style.display = aparece;
-
-</script>

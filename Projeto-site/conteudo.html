@@ -48,7 +48,7 @@
     </header>
     <main>
         <div data-anime="left" onclick="heart()">
-            
+
             <div class="pinturas-galeria flex">
                 <div class="card-pesquisa">
                     <img src="img/paintings/botticelli-nascimento-venus.jpg" class="small_img">
@@ -339,73 +339,21 @@
         </div>
     </footer>
 
-    <!-- MODAL LOGIN-->
-    <div id="modal-login" class="modal-container flex">
-        <div class="modal">
-            <button class="fechar">&times;</button>
-            <h2>Login</h2>
-            <img src="img/palette.png" alt="tela">
-            <form>
-                <input type="text" class="input" placeholder="E-mail">
-                <div class="border-input"></div>
-                <input type="password" class="input" placeholder="Senha">
-                <div class="border-input"></div>
-                <input type="checkbox"><span>Lembrar identificação do usuário</span>
-                <button class="enter">ENTRAR</button>
-                <button class="enter face">ENTRAR COM O FACEBOOK</button>
-            </form>
-        </div>
-    </div>
-
-    <!--MODAL CADASTRO-->
-    <div id="modal-cadastro" class="modal-container flex">
-
-        <div class="modal register flex">
-            <button class="fechar">&times;</button>
-
-            <div class="img-cadastro">
-                <img src="img/grito-editada.png" alt="">
-            </div>
-
-            <form action="http://localhost:3333/users" method="POST" id='form_cad'>
-                <h2>Faça parte da comunidade Colorful Art</h2>
-                <img src="img/tela.png" alt="paleta">
-
-                <ul id="mensagem_erro" class="error"></ul>
-
-                <input type="text" class="input" placeholder="Seu nome" id="valida_nome" onkeyup="validacao_nome()">
-                <div class="border-input" id="mensagem_nome"></div>
-
-                <input type="email" class="input" placeholder="Seu e-mail" id="valida_email"
-                    onkeyup="validacao_email()">
-                <div class="border-input" id="mensagem_email"></div>
-
-                <input type="password" class="input" placeholder="Crie uma senha" id="valida_senha"
-                    onkeyup="validacao_senha()">
-                <div class="border-input" id="mensagem_senha"></div>
-
-                <input type="password" class="input" placeholder="Confirmar senha" id="confirma_senha">
-                <div class="border-input"></div>
-
-                <button type="submit" class="enter">CADASTRAR-SE</button>
-            </form>
-        </div>
-    </div>
-
 
     <script src="js/modal.js"></script>
-    <script src="js/validacao_form.js"></script>
     <script src="js/animacoes.js"></script>
     <script src="js/favoritar.js"></script>
 </body>
 
 </html>
 <script>
+    
+    // ALTERAÇÃO DO MENU AO FAZER LOGIN
 
-        let aparece = sessionStorage.mudaMenuLogin;
-        let nome= sessionStorage.nomeUsuario;
-        document.getElementById('nome_logado').innerHTML = nome;
-        document.querySelector('.nome-logado').style.display = aparece;
+    let aparece = sessionStorage.mudaMenuLogin;
+    let nome = sessionStorage.nomeUsuario;
+    document.getElementById('nome_logado').innerHTML = nome;
+    document.querySelector('.nome-logado').style.display = aparece;
 
 
 </script>
