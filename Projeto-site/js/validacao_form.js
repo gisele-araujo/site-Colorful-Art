@@ -89,6 +89,8 @@ function logar(event) {
 
                     window.location.href = 'conteudo.html';
                     sessionStorage.nomeUsuario = nome_cadastrado; 
+                    sessionStorage.mudaMenu = 'none';
+                    sessionStorage.mudaMenuLogin = 'inline-block';
                 }
             }
             

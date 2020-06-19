@@ -46,6 +46,10 @@ p {
     align-items: center;
 }
 
+.justify-space {
+    justify-content: space-around;
+}
+
 .botao-principal {
     margin: 40px auto;
     text-align: center;
@@ -156,6 +160,21 @@ header {
 
 @media (max-width: 1150px) {
     .autenticacao { display: none; }
+}
+
+.nome-logado {
+    display: none;
+    width: 12%;
+    padding: 12px;
+    margin-left: 5%;
+    background-color: #daa520;
+    color: #fff;
+    border-radius: 37px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.nome-logado:hover {
+    background-color: rgb(243, 185, 40);
 }
 
 /*MINI MENU*/

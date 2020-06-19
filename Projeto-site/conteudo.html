@@ -25,7 +25,7 @@
     <header>
         <!--BARRA DE MENU-->
         <div class="menu">
-            <div class="container flex">
+            <div class="container flex justify-space">
                 <div class="logo">
                     <a href="index.html">
                         <h1>Colorful Art</h1>
@@ -40,7 +40,7 @@
                         <input type="text" placeholder="Buscar pintura, escultura, artista...">
                     </div>
                 </div>
-                <div>
+                <div class="nome-logado">
                     Olá, <span id="nome_logado"></span>
                 </div>
             </div>
@@ -401,8 +401,11 @@
 
 </html>
 <script>
-    
-    let nome= sessionStorage.nomeUsuario;
-    document.getElementById('nome_logado').innerHTML = nome;
+
+        let aparece = sessionStorage.mudaMenuLogin;
+        let nome= sessionStorage.nomeUsuario;
+        document.getElementById('nome_logado').innerHTML = nome;
+        document.querySelector('.nome-logado').style.display = aparece;
+
 
 </script>

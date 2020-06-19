@@ -19,7 +19,7 @@
         <!--BARRA DE MENU-->
         <div>
             <div class="menu">
-                <div class="container">
+                <div class="container flex justify-space">
                     <div class="logo">
                         <a href="index.html">
                             <h1>Colorful Art</h1>
@@ -53,7 +53,7 @@
                         </ul>
                     </nav>
 
-                    <nav class="links autenticacao" id="autenticacao">
+                    <nav class="links autenticacao" id="autent">
                         <li>
                             <a class="botao" id="login_acesso">Login</a>
                         </li>
@@ -61,6 +61,9 @@
                             <a class="botao destaque" id="cadastrar_acesso">Cadastre-se</a>
                         </li>
                     </nav>
+                    <div class="nome-logado">
+                        Olá, <span id="nome_logado"></span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -572,6 +575,14 @@
                 animeScroll();
             });
         }
+
+        let esconde = sessionStorage.mudaMenu;
+        let aparece = sessionStorage.mudaMenuLogin;
+        let nome= sessionStorage.nomeUsuario;
+        document.getElementById('nome_logado').innerHTML = nome;
+        autent.style.display = esconde;
+        document.querySelector('.nome-logado').style.display = aparece;
+
     </script>
     <script src="js/modal.js"></script>
     <script src="js/validacao_form.js"></script>
