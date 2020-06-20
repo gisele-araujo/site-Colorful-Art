@@ -91,12 +91,6 @@ header {
     position: fixed;
 }
 
-.logo {
-    display: inline-block;
-    padding-top: 5px;
-    float: left;
-}
-
 .logo h1{
     display: inline-block;
     color: #000;
@@ -460,4 +454,22 @@ header {
 [data-anime].animate {
    opacity: 1;
    transform: translate3d(0px, 0px, 0px);
+
 }
+
+/* efeito fade In para elementos no js*/
+
+.fadeIn {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+

@@ -1,6 +1,11 @@
 // OBRAS
 
+
 function troca_obras_proximo() {
+
+    fade_obras.classList.add("fadeIn");
+    fade_obras2.classList.remove("fadeIn");
+    
 
     // troca de imagens das obras
 
@@ -20,6 +25,10 @@ function troca_obras_proximo() {
 
 function troca_obras_anterior() {
 
+    fade_obras2.classList.add("fadeIn");
+    fade_obras.classList.remove("fadeIn");
+
+
     // troca de imagens das obras
 
     document.getElementById("obra1").src = "img/paintings/gogh-starry-night.jpg";
@@ -35,10 +44,13 @@ function troca_obras_anterior() {
     document.getElementById("nome_obra4").innerHTML = 'Velho Guitarrista <br> Cego';
 
 }
-
 // ARTISTAS
 
 function troca_artistas_proximo() {
+
+    fade_artist.classList.add("fadeIn")
+    fade_artist2.classList.remove("fadeIn")
+
 
     //troca de imagens dos artistas
 
@@ -56,6 +68,10 @@ function troca_artistas_proximo() {
 
 }
 function troca_artistas_anterior() {
+
+    fade_artist2.classList.add("fadeIn")
+    fade_artist.classList.remove("fadeIn")
+
 
     //troca de imagens dos artistas
 

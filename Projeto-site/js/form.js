@@ -97,6 +97,7 @@ function cadastrar(event) {
     } else {
 
         // mensagem para o usuário
+        sucesso.classList.add("fadeIn");
         sucesso.style.display = 'block'
         formulario_cad.style.display = 'none';
 

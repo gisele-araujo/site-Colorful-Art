@@ -10,6 +10,7 @@ let movimento = {
         quadro_apr.style.display = 'none';
         title_quiz.style.display = 'block';
         q1.style.display = 'block';
+        quiz_questions.classList.add("fadeIn");
     }
 
     // ------------------------QUESTÃO 1------------------------------
@@ -152,9 +153,11 @@ let movimento = {
     
     function resultado() {
         loading.style.display = 'none';
+        quiz_result.classList.add("fadeIn");
 
         if (movimento.renascimento > movimento.expressionismo && movimento.renascimento > movimento.surrealismo && movimento.renascimento > movimento.popart) {
             result1.style.display = 'block';
+            
         }
         else if (movimento.expressionismo > movimento.renascimento && movimento.expressionismo > movimento.surrealismo && movimento.expressionismo > movimento.popart) {
             result2.style.display = 'block';

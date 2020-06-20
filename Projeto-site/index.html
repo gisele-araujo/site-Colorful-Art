@@ -53,7 +53,7 @@
                         Olá, <span id="nome_logado"></span>
                     </div>
 
-                    
+
                     <!--mini menu-->
                     <div class="menu-mini">
                         <img src="img/menu.png">
@@ -82,7 +82,7 @@
         </div>
 
         <!--QUIZ-->
-        <section class="apresentacao" id="fundo_quiz">
+        <section class="apresentacao">
             <div class="container flex">
                 <div id="quadro_apr" class="texto" data-anime="left">
                     <img src="img/moldura.png" class="moldura">
@@ -95,166 +95,177 @@
             </div>
 
             <div class="container">
-                <div id="title_quiz">
-                    <h1 class="titulo-quiz flex">Qual movimento artístico tem mais a ver com sua personalidade?</h1>
-                    <hr>
-                </div>
+                <section id="quiz_questions">
+                    <div id="title_quiz">
+                        <h1 class="titulo-quiz flex">Qual movimento artístico tem mais a ver com sua personalidade?</h1>
+                        <hr>
+                    </div>
 
-                <div class="combo-questao" id="q1">
-                    <h2 class="pergunta">Qual dessas pinturas abaixo você gostaria de ter em casa?</h2>
+                    <div class="combo-questao" id="q1">
+                        <h2 class="pergunta">Qual dessas pinturas abaixo você gostaria de ter em casa?</h2>
 
-                    <div class="flex">
-                        <div onclick="op1_1()" class="opcao"><img src="img/paintings/botticelli-nascimento-venus.jpg">
+                        <div class="flex">
+                            <div onclick="op1_1()" class="opcao"><img
+                                    src="img/paintings/botticelli-nascimento-venus.jpg">
+                            </div>
+                            <div onclick="op2_1()" class="opcao"><img src="img/paintings/gogh-starry-night.jpg"></div>
+
+                            <div onclick="op3_1()" class="opcao"><img
+                                    src="img/paintings/dali-persistencia-da-memoria.jpg">
+                            </div>
+                            <div onclick="op4_1()" class="opcao"><img
+                                    src="img/paintings/warhol-portrait-of-maurice.jpg">
+                            </div>
                         </div>
-                        <div onclick="op2_1()" class="opcao"><img src="img/paintings/gogh-starry-night.jpg"></div>
+                    </div>
 
-                        <div onclick="op3_1()" class="opcao"><img src="img/paintings/dali-persistencia-da-memoria.jpg">
+                    <div class="combo-questao" id="q2">
+                        <h2 class="pergunta">Se você pudesse escolher, viveria no passado, futuro ou presente?</h2>
+
+                        <div class="flex">
+                            <div onclick="op1_2()" class="opcao">Passado</div>
+                            <div onclick="op2_2()" class="opcao">Presente</div>
                         </div>
-                        <div onclick="op4_1()" class="opcao"><img src="img/paintings/warhol-portrait-of-maurice.jpg">
+                        <div class="flex">
+                            <div onclick="op3_2()" class="opcao">Não sei ao certo</div>
+                            <div onclick="op4_2()" class="opcao">Futuro</div>
                         </div>
                     </div>
-                </div>
 
-                <div class="combo-questao" id="q2">
-                    <h2 class="pergunta">Se você pudesse escolher, viveria no passado, futuro ou presente?</h2>
+                    <div class="combo-questao" id="q3">
+                        <h2 class="pergunta">Escolha uma paleta de cores</h2>
 
-                    <div class="flex">
-                        <div onclick="op1_2()" class="opcao">Passado</div>
-                        <div onclick="op2_2()" class="opcao">Presente</div>
+                        <div class="flex">
+                            <div onclick="op1_3()" class="opcao"><img src="img/cores1.png" style="height: 70px;"></div>
+                            <div onclick="op2_3()" class="opcao"><img src="img/cores4.png" style="height: 70px;"></div>
+                        </div>
+                        <div class="flex">
+                            <div onclick="op3_3()" class="opcao"><img src="img/cores2.png" style="height: 70px;"></div>
+                            <div onclick="op4_3()" class="opcao"><img src="img/cores3.png" style="height: 70px;"></div>
+                        </div>
                     </div>
-                    <div class="flex">
-                        <div onclick="op3_2()" class="opcao">Não sei ao certo</div>
-                        <div onclick="op4_2()" class="opcao">Futuro</div>
-                    </div>
-                </div>
 
-                <div class="combo-questao" id="q3">
-                    <h2 class="pergunta">Escolha uma paleta de cores</h2>
+                    <div class="combo-questao" id="q4">
+                        <h2 class="pergunta">Com que frequência você é incompreendido pelas pessoas?</h2>
 
-                    <div class="flex">
-                        <div onclick="op1_3()" class="opcao"><img src="img/cores1.png" style="height: 70px;"></div>
-                        <div onclick="op2_3()" class="opcao"><img src="img/cores4.png" style="height: 70px;"></div>
+                        <div class="flex">
+                            <div onclick="op1_4()" class="opcao">Nunca</div>
+                            <div onclick="op2_4()" class="opcao">As vezes</div>
+                        </div>
+                        <div class="flex">
+                            <div onclick="op3_4()" class="opcao">Muito</div>
+                            <div onclick="op4_4()" class="opcao">Raramente</div>
+                        </div>
                     </div>
-                    <div class="flex">
-                        <div onclick="op3_3()" class="opcao"><img src="img/cores2.png" style="height: 70px;"></div>
-                        <div onclick="op4_3()" class="opcao"><img src="img/cores3.png" style="height: 70px;"></div>
-                    </div>
-                </div>
 
-                <div class="combo-questao" id="q4">
-                    <h2 class="pergunta">Com que frequência você é incompreendido pelas pessoas?</h2>
-
-                    <div class="flex">
-                        <div onclick="op1_4()" class="opcao">Nunca</div>
-                        <div onclick="op2_4()" class="opcao">As vezes</div>
+                    <div class="combo-questao" id="q5">
+                        <h2 class="pergunta">Qual seu maior desejo atualmente?</h2>
+                        <div class="flex">
+                            <div onclick="op1_5()" class="opcao">Adquirir mais conhecimento</div>
+                            <div onclick="op2_5()" class="opcao">Viver a vida intensamente</div>
+                        </div>
+                        <div class="flex">
+                            <div onclick="op3_5()" class="opcao">Ajudar os outros e o planeta</div>
+                            <div onclick="op4_5()" class="opcao">Enriquecer</div>
+                        </div>
                     </div>
-                    <div class="flex">
-                        <div onclick="op3_4()" class="opcao">Muito</div>
-                        <div onclick="op4_4()" class="opcao">Raramente</div>
-                    </div>
-                </div>
-
-                <div class="combo-questao" id="q5">
-                    <h2 class="pergunta">Qual seu maior desejo atualmente?</h2>
-                    <div class="flex">
-                        <div onclick="op1_5()" class="opcao">Adquirir mais conhecimento</div>
-                        <div onclick="op2_5()" class="opcao">Viver a vida intensamente</div>
-                    </div>
-                    <div class="flex">
-                        <div onclick="op3_5()" class="opcao">Ajudar os outros e o planeta</div>
-                        <div onclick="op4_5()" class="opcao">Enriquecer</div>
-                    </div>
-                </div>
+                </section>
 
                 <!--RESULTADOS DO QUIZ-->
-
-                <div class="resultado-quiz" id="result1">
-                    <h1 class="title-result-quiz">RENASCIMENTO</h1>
-                    <div class="content-result-quiz flex">
-                        <div class="image-result-quiz">
-                            <img src="img/paintings/vinci-monalisa.jpg">
-                        </div>
-                        <div class="text-result-quiz">
-                            <p>Assim como a arte renascentista, você também procura a perfeição, em si e no seu
-                                trabalho.
-                                Você é uma pessoa audaciosa e naturalmente líder! Que tal conhecer mais sobre o
-                                movimento do renascimento?</p>
-                            <h3 class="botao-principal">
-                                <a href="conteudo.html">Ver obras</a>
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="resultado-quiz" id="result2">
-                    <h1 class="title-result-quiz">EXPRESSIONISMO</h1>
-                    <div class="content-result-quiz flex">
-                        <div class="image-result-quiz">
-                            <img src="img/paintings/munch-the-scream.jpg">
-                        </div>
-                        <div class="text-result-quiz">
-                            <p>Assim como a arte expressionista, você é extremamente intenso, e cheio de carga
-                                emocional.
-                                Você gosta de ajudar os outros e entender a complexidade humana, e se destaca por ser
-                                uma pessoa empática e perceptiva! Venha sentir as obras do movimento expressionista!
-                            </p>
-                            <h3 class="botao-principal">
-                                <a href="conteudo.html">Ver obras</a>
-                            </h3>
+                <section id="quiz_result">
+                    <div class="resultado-quiz" id="result1">
+                        <h1 class="title-result-quiz">RENASCIMENTO</h1>
+                        <div class="content-result-quiz flex">
+                            <div class="image-result-quiz">
+                                <img src="img/paintings/vinci-monalisa.jpg">
+                            </div>
+                            <div class="text-result-quiz">
+                                <p>Assim como a arte renascentista, você também procura a perfeição, em si e no seu
+                                    trabalho.
+                                    Você é uma pessoa audaciosa e naturalmente líder! Que tal conhecer mais sobre o
+                                    movimento do renascimento?</p>
+                                <h3 class="botao-principal">
+                                    <a href="conteudo.html">Ver obras</a>
+                                </h3>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="resultado-quiz" id="result3">
-                    <h1 class="title-result-quiz">SURREALISMO</h1>
-                    <div class="content-result-quiz flex">
-                        <div class="image-result-quiz">
-                            <img src="img/paintings/magritte-filho-do-homem.jpg">
-                        </div>
-                        <div class="text-result-quiz">
-                            <p>Assim como no surrealismo, você é uma pessoa espontânea e de imaginação fértil!
-                                Adora histórias de fantasia e se destaca pela criatividade. Venha mergulhar no mundo do
-                                surrealismo!
-                            </p>
-                            <h3 class="botao-principal">
-                                <a href="conteudo.html">Ver obras</a>
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="resultado-quiz" id="result4">
-                    <h1 class="title-result-quiz">POP ART</h1>
-                    <div class="content-result-quiz flex">
-                        <div class="image-result-quiz">
-                            <img src="img/woman-pop-art.jpg">
-                        </div>
-                        <div class="text-result-quiz">
-                            <p>Você é uma pessoa de espírito jovem, extrovertida e sociável, e adora coisas modernas.
-                                Por onde passa, você é o centro das atenções. Você vai adorar obras do Pop Art, bora
-                                conhecer?
-                            </p>
-                            <h3 class="botao-principal">
-                                <a href="conteudo.html">Ver obras</a>
-                            </h3>
+                    <div class="resultado-quiz" id="result2">
+                        <h1 class="title-result-quiz">EXPRESSIONISMO</h1>
+                        <div class="content-result-quiz flex">
+                            <div class="image-result-quiz">
+                                <img src="img/paintings/munch-the-scream.jpg">
+                            </div>
+                            <div class="text-result-quiz">
+                                <p>Assim como a arte expressionista, você é extremamente intenso, e cheio de carga
+                                    emocional.
+                                    Você gosta de ajudar os outros e entender a complexidade humana, e se destaca por
+                                    ser
+                                    uma pessoa empática e perceptiva! Venha sentir as obras do movimento expressionista!
+                                </p>
+                                <h3 class="botao-principal">
+                                    <a href="conteudo.html">Ver obras</a>
+                                </h3>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="resultado-quiz" id="result5">
-                    <h1 class="title-result-quiz">IMPRESSIONISMO</h1>
-                    <div class="content-result-quiz flex">
-                        <div class="image-result-quiz">
-                            <img src="img/paintings/monet-mulher-com-sombrinha.jpg">
-                        </div>
-                        <div class="text-result-quiz">
-                            <p>Assim como a arte impressionista, você é uma pessoa leve e tranquila, e adora estar ao ar
-                                livre.
-                                Você aprecia os bons momentos da vida e gosta de registra-los. Venha se impressionar com
-                                as obras do movimento impressionista na Colorful Art!
-                            </p>
-                            <h3 class="botao-principal">
-                                <a href="conteudo.html">Ver obras</a>
-                            </h3>
+                    <div class="resultado-quiz" id="result3">
+                        <h1 class="title-result-quiz">SURREALISMO</h1>
+                        <div class="content-result-quiz flex">
+                            <div class="image-result-quiz">
+                                <img src="img/paintings/magritte-filho-do-homem.jpg">
+                            </div>
+                            <div class="text-result-quiz">
+                                <p>Assim como no surrealismo, você é uma pessoa espontânea e de imaginação fértil!
+                                    Adora histórias de fantasia e se destaca pela criatividade. Venha mergulhar no mundo
+                                    do
+                                    surrealismo!
+                                </p>
+                                <h3 class="botao-principal">
+                                    <a href="conteudo.html">Ver obras</a>
+                                </h3>
+                            </div>
                         </div>
                     </div>
-                </div>
+                    <div class="resultado-quiz" id="result4">
+                        <h1 class="title-result-quiz">POP ART</h1>
+                        <div class="content-result-quiz flex">
+                            <div class="image-result-quiz">
+                                <img src="img/woman-pop-art.jpg">
+                            </div>
+                            <div class="text-result-quiz">
+                                <p>Você é uma pessoa de espírito jovem, extrovertida e sociável, e adora coisas
+                                    modernas.
+                                    Por onde passa, você é o centro das atenções. Você vai adorar obras do Pop Art, bora
+                                    conhecer?
+                                </p>
+                                <h3 class="botao-principal">
+                                    <a href="conteudo.html">Ver obras</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="resultado-quiz" id="result5">
+                        <h1 class="title-result-quiz">IMPRESSIONISMO</h1>
+                        <div class="content-result-quiz flex">
+                            <div class="image-result-quiz">
+                                <img src="img/paintings/monet-mulher-com-sombrinha.jpg">
+                            </div>
+                            <div class="text-result-quiz">
+                                <p>Assim como a arte impressionista, você é uma pessoa leve e tranquila, e adora estar
+                                    ao ar
+                                    livre.
+                                    Você aprecia os bons momentos da vida e gosta de registra-los. Venha se impressionar
+                                    com
+                                    as obras do movimento impressionista na Colorful Art!
+                                </p>
+                                <h3 class="botao-principal">
+                                    <a href="conteudo.html">Ver obras</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
                 <div id="loading">
                     <div class="flex">
@@ -279,46 +290,52 @@
                                 &#9668;
                             </button>
                         </div>
-                        <li class="art">
-                            <div class="art-card">
-                                <div class="art-foto">
-                                    <img src="img/paintings/gogh-starry-night.jpg" alt="A Noite Estrelada" id="obra1">
-                                    <div class="art-nome">
-                                        <h3 id="nome_obra1">A Noite Estrelada</h3>
+                        <div id="fade_obras" class="flex">
+                            <div id="fade_obras2" class="flex">
+                                <li class="art">
+                                    <div class="art-card">
+                                        <div class="art-foto">
+                                            <img src="img/paintings/gogh-starry-night.jpg" alt="A Noite Estrelada"
+                                                id="obra1">
+                                            <div class="art-nome">
+                                                <h3 id="nome_obra1">A Noite Estrelada</h3>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="art">
-                            <div class="art-card">
-                                <div class="art-foto">
-                                    <img src="img/paintings/vinci-monalisa.jpg" alt="Monalisa" id="obra2">
-                                    <div class="art-nome">
-                                        <h3 id="nome_obra2">Monalisa</h3>
+                                </li>
+                                <li class="art">
+                                    <div class="art-card">
+                                        <div class="art-foto">
+                                            <img src="img/paintings/vinci-monalisa.jpg" alt="Monalisa" id="obra2">
+                                            <div class="art-nome">
+                                                <h3 id="nome_obra2">Monalisa</h3>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="art">
-                            <div class="art-card">
-                                <div class="art-foto">
-                                    <img src="img/paintings/munch-the-scream.jpg" alt="O Grito" id="obra3">
-                                    <div class="art-nome">
-                                        <h3 id="nome_obra3">O Grito</h3>
+                                </li>
+                                <li class="art">
+                                    <div class="art-card">
+                                        <div class="art-foto">
+                                            <img src="img/paintings/munch-the-scream.jpg" alt="O Grito" id="obra3">
+                                            <div class="art-nome">
+                                                <h3 id="nome_obra3">O Grito</h3>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="art">
-                            <div class="art-card">
-                                <div class="art-foto">
-                                    <img src="img/paintings/picasso-vieux.jpg" alt="Velho guitarrista cego" id="obra4">
-                                    <div class="art-nome">
-                                        <h3 id="nome_obra4">Velho Guitarrista <br> Cego</h3>
+                                </li>
+                                <li class="art">
+                                    <div class="art-card">
+                                        <div class="art-foto">
+                                            <img src="img/paintings/picasso-vieux.jpg" alt="Velho guitarrista cego"
+                                                id="obra4">
+                                            <div class="art-nome">
+                                                <h3 id="nome_obra4">Velho Guitarrista <br> Cego</h3>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
+                                </li>
                             </div>
-                        </li>
+                        </div>
                         <div>
                             <button class="botao-art before flex" onclick="troca_obras_proximo()">
                                 &#9658;
@@ -344,46 +361,51 @@
                                 &#9668;
                             </button>
                         </div>
-                        <li class="art">
-                            <div class="art-card">
-                                <div class="art-foto">
-                                    <img src="img/paintings/gogh-auto-retrato.jpg" alt="Van Gogh" id="artista1">
-                                    <div class="art-nome">
-                                        <h3 id="nome_art1">Van Gogh</h3>
+                        <div id="fade_artist" class="flex">
+                            <div id="fade_artist2" class="flex">
+                                <li class="art">
+                                    <div class="art-card">
+                                        <div class="art-foto">
+                                            <img src="img/paintings/gogh-auto-retrato.jpg" alt="Van Gogh" id="artista1">
+                                            <div class="art-nome">
+                                                <h3 id="nome_art1">Van Gogh</h3>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="art">
-                            <div class="art-card">
-                                <div class="art-foto">
-                                    <img src="img/paintings/Edvard_Munch.jpg" alt="Munch" id="artista2">
-                                    <div class="art-nome">
-                                        <h3 id="nome_art2">Edvard Munch</h3>
+                                </li>
+                                <li class="art">
+                                    <div class="art-card">
+                                        <div class="art-foto">
+                                            <img src="img/paintings/Edvard_Munch.jpg" alt="Munch" id="artista2">
+                                            <div class="art-nome">
+                                                <h3 id="nome_art2">Edvard Munch</h3>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="art">
-                            <div class="art-card">
-                                <div class="art-foto">
-                                    <img src="img/paintings/Sandro_Botticelli.jpg" alt="Botticelli" id="artista3">
-                                    <div class="art-nome">
-                                        <h3 id="nome_art3">Sandro Botticelli</h3>
+                                </li>
+                                <li class="art">
+                                    <div class="art-card">
+                                        <div class="art-foto">
+                                            <img src="img/paintings/Sandro_Botticelli.jpg" alt="Botticelli"
+                                                id="artista3">
+                                            <div class="art-nome">
+                                                <h3 id="nome_art3">Sandro Botticelli</h3>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="art">
-                            <div class="art-card">
-                                <div class="art-foto">
-                                    <img src="img/paintings/Leonardo-da-Vinci.jpg" alt="Da vinci" id="artista4">
-                                    <div class="art-nome">
-                                        <h3 id="nome_art4">Leonardo da Vinci</h3>
+                                </li>
+                                <li class="art">
+                                    <div class="art-card">
+                                        <div class="art-foto">
+                                            <img src="img/paintings/Leonardo-da-Vinci.jpg" alt="Da vinci" id="artista4">
+                                            <div class="art-nome">
+                                                <h3 id="nome_art4">Leonardo da Vinci</h3>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
+                                </li>
                             </div>
-                        </li>
+                        </div>
                         <div>
                             <button class="botao-art before flex" onclick="troca_artistas_proximo()">
                                 &#9658;
@@ -556,7 +578,7 @@
 
             <div class="cadastro-sucesso" id="sucesso">
                 <h2>Cadastrado com sucesso! Agora é só fazer login e usufruir da arte :)</h2>
-            </div>    
+            </div>
         </div>
     </div>
 
