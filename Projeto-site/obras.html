@@ -25,7 +25,7 @@
                     </a>
                     <img src="img/brush.png" alt="">
                 </div>
-                
+
                 <nav class="links navegacao">
                     <ul>
                         <li>
@@ -100,25 +100,23 @@
                 <hr>
                 <ul>
                     <li class="mov-card" data-anime="left">
-                        <div class="mov-foto">
+                        <div class="mov-foto" onclick="access()">
                             <img src="img/paintings/gogh-starry-night.jpg">
-                            <a href="conteudo.html">
-                                <div class="mov-nome">
-                                    <h3>Pinturas</h3>
-                                </div>
-                            </a>
+                            <div class="mov-nome">
+                                <h3>Pinturas</h3>
+                            </div>
                         </div>
                     </li>
                     <li class="mov-card" data-anime="left">
-                        <div class="mov-foto">
-                            <img src="img/michelangelo-pieta.jpg" alt="">
+                        <div class="mov-foto" onclick="access()">
+                            <img src="img/michelangelo-pieta.jpg">
                             <div class="mov-nome">
                                 <h3>Esculturas</h3>
                             </div>
                         </div>
                     </li>
                     <li class="mov-card" data-anime="left">
-                        <div class="mov-foto">
+                        <div class="mov-foto" onclick="access()">
                             <img src="img/draw.png" alt="">
                             <div class="mov-nome">
                                 <h3>Desenhos</h3>
@@ -126,7 +124,7 @@
                         </div>
                     </li>
                     <li class="mov-card" data-anime="left">
-                        <div class="mov-foto">
+                        <div class="mov-foto" onclick="access()">
                             <img src="img/gravura.jpg" alt="">
                             <div class="mov-nome">
                                 <h3>Gravuras</h3>
@@ -134,7 +132,7 @@
                         </div>
                     </li>
                     <li class="mov-card" data-anime="left">
-                        <div class="mov-foto">
+                        <div class="mov-foto" onclick="access()">
                             <img src="img/KISS.jpg" alt="">
                             <div class="mov-nome">
                                 <h3>Artesanatos</h3>
@@ -216,23 +214,23 @@
                         <ul>
                             <li>
                                 <a href="https://www.facebook.com/giwkiss/" target="_blank">
-                                    <img src="img/facebook.png" alt="">
+                                    <img src="img/facebook.png">
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.instagram.com/nuvemexotica/?hl=pt-br" target="_blank">
-                                    <img src="img/instagram.png" alt="">
+                                    <img src="img/instagram.png">
                                 </a>
                             </li>
                             <li>
                                 <a href="https://twitter.com/NuvemExotica" target="_blank">
-                                    <img src="img/twitter.png" alt="">
+                                    <img src="img/twitter.png">
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.youtube.com/channel/UCc0SGr_WWw9t4iKfi2NP6KQ?view_as=subscriber"
                                     target="_blank">
-                                    <img src="img/youtube.png" alt="">
+                                    <img src="img/youtube.png">
                                 </a>
                             </li>
                         </ul>
@@ -240,7 +238,7 @@
                     <div class="email">
                         <h4>Contate-nos</h4>
                         <a href="mailto:gisele.flor@bandtec.com.br">
-                            <img src="img/email.png" alt="">
+                            <img src="img/email.png">
                             <span>gisele.flor@bandtec.com.br</span>
                         </a>
                     </div>
@@ -261,6 +259,9 @@
             <h2>Login</h2>
             <img src="img/palette.png" alt="tela">
             <form id="formulario_login">
+
+                <div id="mensagem_erro_login" class="error"></div>
+
                 <input type="text" class="input" placeholder="E-mail" id="login_email">
                 <div class="border-input"></div>
 
@@ -314,20 +315,7 @@
         </div>
     </div>
 
-    <script>
-
-        // ALTERAÇÃO DO MENU AO FAZER LOGIN
-
-        let esconde = sessionStorage.mudaMenu;
-        let aparece = sessionStorage.mudaMenuLogin;
-        let nome = sessionStorage.nomeUsuario;
-        document.getElementById('nome_logado').innerHTML = nome;
-        autent.style.display = esconde;
-        document.querySelector('.nome-logado').style.display = aparece;
-
-    </script>
-
-
+    <script src="js/funcional-obras.js"></script>
     <script src="js/modal.js"></script>
     <script src="js/form.js"></script>
     <script src="js/animacoes.js"></script>

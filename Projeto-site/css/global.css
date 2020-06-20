@@ -161,14 +161,14 @@ header {
     width: 12%;
     padding: 12px;
     margin-left: 5%;
-    background-color: #daa520;
+    background-color: #0387ca;
     color: #fff;
     border-radius: 37px;
     cursor: pointer;
     transition: all 0.5s;
 }
 .nome-logado:hover {
-    background-color: rgb(243, 185, 40);
+    background-color: #229fdd;
 }
 
 /*MINI MENU*/

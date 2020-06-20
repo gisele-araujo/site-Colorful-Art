@@ -141,7 +141,6 @@ function logar(event) {
             for (let i = 0; i < usuarios.length; i++) {
 
                 if (email_digitado == usuarios[i].Email) {
-
                     nome_cadastrado = usuarios[i].Nome;
                     window.location.href = 'conteudo.html';
 
@@ -152,8 +151,9 @@ function logar(event) {
             }
 
             if (nome_cadastrado == '') {
-                alert('Email ou senha inválidos')
+                mensagem_erro_login.innerHTML = 'Usuário não encontrado. Verifique se o email e a senha estão corretos.';
             }
+
         }
     }
     //Para a conexao funcionar, temos que colocar o ajax.send, porem como a rota é de get, não enviamos nada
@@ -162,3 +162,4 @@ function logar(event) {
 
 let form_login = document.getElementById("formulario_login")
 form_login.addEventListener("submit", logar);
+
