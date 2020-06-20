@@ -1,6 +1,8 @@
 
 <span align="center">
   
+  ![site](https://github.com/gisele-araujo/site-Colorful-Art/blob/master/Projeto-site/img/Colagem-readme.png)
+  
   
 ![logo](https://github.com/gisele-araujo/site-Colorful-Art/blob/master/Projeto-site/img/logo.png)
 
