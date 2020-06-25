@@ -34,7 +34,7 @@ function validacao_email() {
         for (let i = 0; i <= email.length - 1; i++) {
 
             if (email.indexOf('@') >= 0 && email.indexOf('.') >= 0 && email.indexOf(' ') == -1) {
-                document.getElementById('mensagem_email').innerHTML = '<b style="color: #008000; background-color: #cff7cf; display: block;; padding: 2px"> Email OK! </b>';
+                document.getElementById('mensagem_email').innerHTML = '<b style="color: #008000; background-color: #cff7cf; display: block; padding: 2px"> Email OK! </b>';
                 validado_email = true;
 
             } else {

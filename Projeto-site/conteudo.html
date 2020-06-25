@@ -33,18 +33,40 @@
                     <img src="img/brush.png" alt="">
                 </div>
                 <div class="links-minimizado">
-                    <img src="img/open-menu.png" alt="">
+                    <img src="img/open-menu.png">
                 </div>
                 <div class="search-menu flex">
                     <div>
                         <input type="text" placeholder="Buscar pintura, escultura, artista...">
                     </div>
                 </div>
-                <div class="nome-logado">
-                    Olá, <span id="nome_logado"></span>
-                </div>
+                <span class="hover-login">
+                    <div class="nome-logado">
+                        Olá, <span id="nome_logado"></span>
+                    </div>
+                    <ul class="menu-logado flex" style="right: 140px">
+                        <li>
+                            <img src="img/user.png" class="icon-user">
+                            <a href="#">Meu perfil</a></li>
+                        <li>
+                            <img src="img/settings.png" class="icon-user">
+                            <a href="#">Configurações</a>
+                        </li>
+                        <li>
+                            <img src="img/question.png" class="icon-user">
+                            <a href="#">Ajuda</a>
+                        </li>
+                        <li>
+                            <img src="img/logout.png" class="icon-user">
+                            <a href="#">Sair</a>
+                        </li>
+                    </ul>
+                </span>
             </div>
+
         </div>
+
+
     </header>
     <main>
         <div data-anime="left" onclick="heart()">
@@ -347,7 +369,7 @@
 
 </html>
 <script>
-    
+
     // ALTERAÇÃO DO MENU AO FAZER LOGIN
 
     let aparece = sessionStorage.mudaMenuLogin;
@@ -355,5 +377,8 @@
     document.getElementById('nome_logado').innerHTML = nome;
     document.querySelector('.nome-logado').style.display = aparece;
 
+    function abre_menu() {
+
+    }
 
 </script>

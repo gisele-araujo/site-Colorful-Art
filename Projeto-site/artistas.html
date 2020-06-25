@@ -48,12 +48,33 @@
                         <a class="botao destaque" id="cadastrar_acesso">Cadastre-se</a>
                     </li>
                 </nav>
-                <div class="nome-logado">
-                    Olá, <span id="nome_logado"></span>
-                </div>
 
-                <div class="menu-mini">
-                    <img src="img/menu.png" alt="">
+                <span class="hover-login">
+                    <div class="nome-logado">
+                        Olá, <span id="nome_logado"></span>
+                    </div>
+                    <ul class="menu-logado flex">
+                        <li>
+                            <img src="img/user.png" class="icon-user">
+                            <a href="#">Meu perfil</a>
+                        </li>
+                        <li>
+                            <img src="img/settings.png" class="icon-user">
+                            <a href="#">Configurações</a>
+                        </li>
+                        <li>
+                            <img src="img/question.png" class="icon-user">
+                            <a href="#">Ajuda</a>
+                        </li>
+                        <li>
+                            <img src="img/logout.png" class="icon-user">
+                            <a href="#">Sair</a>
+                        </li>
+                    </ul>
+                </span>
+
+                <!-- <div class="menu-mini">
+                    <img src="img/menu.png">
                     <ul class="sub-menu flex">
                         <li><a href="index.html">Início</a></li>
                         <li><a href="obras.html">Obras</a></li>
@@ -61,7 +82,7 @@
                         <li>Fazer Login</li>
                         <li>Criar uma conta</li>
                     </ul>
-                </div>
+                </div> -->
             </div>
         </div>
     </header>
@@ -80,8 +101,8 @@
         <section>
             <div class="container">
                 <div class="search">
-                    <input type="text" class="busca" placeholder="Buscar">
-                    <button class="busca-botao">
+                    <input type="text" class="busca" placeholder="Buscar" id="campo_busca">
+                    <button class="busca-botao" id="botao_busca">
                         <img src="img/search.png" alt="busca">
                     </button>
                 </div>

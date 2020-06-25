@@ -9,6 +9,21 @@ document.getElementById('autent').style.display = esconde;
 document.querySelector('.nome-logado').style.display = aparece;
 
 
+//desabilitar busca 
+
+const inputBusca = document.getElementById("campo_busca");
+const buttonBusca = document.getElementById("botao_busca");
+inputBusca.disabled = true;
+buttonBusca.disabled = true;
+
+inputBusca.classList.add("desabilitado");
+
+if(nome) {
+    inputBusca.disabled = false;
+    inputBusca.classList.remove("desabilitado");
+}
+
+
 // ACESSO AO CONTEÚDO
 
 function access() {

@@ -75,6 +75,11 @@ p {
     background-color: #049eeb;
 }
 
+.desabilitado{
+    cursor: not-allowed;
+    background-color: #e0e0e0;
+}
+
 
 /*BARRA DE MENU*/
 
@@ -134,11 +139,12 @@ header {
 .autenticacao {
     float: right;
     padding: 20px;
+    font-size: 15px;
 }
 
 .botao{
     display: inline-block;
-    width: 90px;
+    width: 95px;
     border: 2px solid #DAA520;
     color: #DAA520;
     font-weight: bold;
@@ -158,18 +164,48 @@ header {
 
 .nome-logado {
     display: none;
-    width: 12%;
-    padding: 12px;
-    margin-left: 5%;
+    width: 150px;
+    padding: 11px;
     background-color: #0387ca;
     color: #fff;
     border-radius: 37px;
     cursor: pointer;
     transition: all 0.5s;
 }
-.nome-logado:hover {
-    background-color: #229fdd;
+
+
+.menu-logado {
+    position: absolute;
+    right: 173px;
+    width: 129px;
+    height: 135px;
+    padding: 20px 0px;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0px 0px 5px 5px;
+    background-color: #f7f7eb;
+    border: 7px double #0387ca;
+    box-shadow: 0 0 0 6px #0387ca;
+    font-size: 13px;
+    display: none;
 }
+
+.menu-logado a {
+    color: #000;
+}
+
+.menu-logado a:hover {
+    color: #138af0;
+}
+
+.hover-login:hover > .menu-logado {
+    display: flex;
+}
+
+.icon-user {
+    width: 15px;
+}
+
 
 /*MINI MENU*/
 
@@ -313,7 +349,7 @@ header {
     background-color: #fff;
     width: 23%;
     padding: 4%;
-    border: 5px double #DAA520;
+    border: 7px double #DAA520;
     box-shadow: 0 0 0 10px white;
     border-radius: 8px;
     position: relative;
